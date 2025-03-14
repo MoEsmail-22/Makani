@@ -2,20 +2,24 @@
 
 const slideRight = document.querySelector('.toRight');
 const slideLeft = document.querySelector('.toLeft');
+const slides = document.querySelectorAll('.slide');
 const widthSlide = 780;
-let count = 1;
+const totalSlides = slides.length;
+let count = 0;
 
 slideRight.addEventListener('click', function () {
-  document.querySelectorAll('.slide').forEach(slide => {
-    slide.style.transition = `  .6s ease-out`;
-    slide.style.transform = `translateX(${count * -widthSlide}px)`;
-  });
-  count++;
+  count = (count + 1) % totalSlides;
+  updateSlider();
 });
 
 slideLeft.addEventListener('click', function () {
-  document.querySelectorAll('.slide').forEach(slide => {
-    slide.style.transition = `  .6s ease-out`;
-    slide.style.transform = `translateX(${widthSlide}px)`;
-  });
+  count = (count - 1 + totalSlides) % totalSlides;
+  updateSlider();
 });
+
+function updateSlider() {
+  slides.forEach(slide => {
+    slide.style.transition = '.6s ease-out';
+    slide.style.transform = `translateX(${-count * widthSlide}px)`;
+  });
+}
