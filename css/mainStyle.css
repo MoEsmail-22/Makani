@@ -20,7 +20,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #e4e4e4;
+  background: var( --mainColor);
 }
 
 /* Handle */
