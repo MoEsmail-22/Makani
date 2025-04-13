@@ -142,18 +142,24 @@ button:active {
 .header {
   background-color: #fff;
   color: #000;
-  padding-top: 15px;
+  padding: 15px 0;
 }
 
-.header .felx {
+.header .flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .header .flex {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
 .header img {
   width: 110px;
-  margin-left: -50px;
 }
 
 .header .nav {
@@ -182,7 +188,7 @@ button:active {
 
 /*/*/
 
-.landding {
+.landing {
   margin-top: 10px;
   background-image: url(../images/landding\ background.png);
   background-size: cover;
@@ -194,13 +200,13 @@ button:active {
   margin-bottom: 0;
 }
 
-.landding h1 {
+.landing h1 {
   font-size: 4rem;
   margin-bottom: 50px;
   text-transform: capitalize;
 }
 
-.landding .search {
+.landing .search {
   font-size: 20px;
   border: 1px solid;
   width: fit-content;
@@ -213,19 +219,19 @@ button:active {
   -o-border-radius: 10px;
 }
 
-.landding .search input {
+.landing .search input {
   border: 0px;
   outline: 0px;
   width: fit-content;
   margin-right: 5px;
 }
 
-.landding .search input::placeholder {
+.landing .search input::placeholder {
   font-size: 14px;
   text-align: left;
 }
 
-.landding .search i {
+.landing .search i {
   color: var(--mainColor);
 }
 
@@ -387,6 +393,7 @@ button:active {
   background-color: #fff;
   color: #000;
 }
+
 .propertyList .switch button:first-of-type:hover,
 .propertyList .switch button:not(.switch button:first-of-type):hover {
   background-color: var(--mainColor);
@@ -532,7 +539,7 @@ button:active {
   border-right: 3px dotted var(--mainColor);
 }
 
-.propertyList .grid + * {
+.propertyList .grid+* {
   margin-top: 50px;
   font-size: 20px;
   margin-bottom: 30px;
@@ -598,11 +605,12 @@ button:active {
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   outline: 15px solid #effcfc;
-  min-width: 780px; /* Adjust as needed */
+  min-width: 780px;
+  /* Adjust as needed */
   margin-right: 60px;
 }
 
-.clients .flex .slide > p {
+.clients .flex .slide>p {
   margin-bottom: 20px;
   line-height: 1.8;
 }
@@ -699,7 +707,7 @@ footer .top {
   justify-content: space-between;
 }
 
-footer .top > * {
+footer .top>* {
   width: 25%;
 }
 
@@ -717,7 +725,7 @@ footer .top .contact li {
   line-height: 1.3;
 }
 
-footer .top .contact > ul li i {
+footer .top .contact>ul li i {
   margin-right: 5px;
 }
 
@@ -749,6 +757,7 @@ footer .links li {
   font-size: 16px;
   width: 80%;
   padding: 10px 10px 0px;
+
   a {
     color: #bbb;
 
@@ -762,7 +771,7 @@ footer .links li {
 
 footer .links li:hover a {
   padding-right: 50px;
-  font-size:19px;
+  font-size: 19px;
   color: #fff;
 }
 
