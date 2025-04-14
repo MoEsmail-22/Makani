@@ -275,6 +275,14 @@ form button {
   }
 }
 
+form button:hover {
+  width: 100%;
+  font-weight: 900;
+  a {
+    color: #000;
+  }
+}
+
 .with {
   font-size: 15px;
   align-self: center;
