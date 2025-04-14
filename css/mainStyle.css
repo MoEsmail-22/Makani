@@ -193,7 +193,7 @@ button:active {
   color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 150px);
   margin-bottom: 0;
   display: flex;
   justify-content: center;
