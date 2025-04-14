@@ -42,6 +42,23 @@ function openNav() {
   document.getElementById('mySidenav').style.width = '250px';
 }
 
+
+function updateSlider() {
+  slides.forEach(slide => {
+    slide.style.transition = '.6s ease-out';
+    slide.style.transform = `translateX(${-count * widthSlide}px)`;
+  });
+}
+
+function openNav() {
+  document.getElementById('mySidenav').style.width = '250px';
+}
+
+function closeNav() {
+  document.getElementById('mySidenav').style.width = '0';
+}
+
+
 function closeNav() {
   document.getElementById('mySidenav').style.width = '0';
 }
