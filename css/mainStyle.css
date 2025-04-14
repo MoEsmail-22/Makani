@@ -1,4 +1,4 @@
-:root {
+  :root {
   --transitionDuration: 0.3s;
   --mainColor: #2b237d;
   --grayText: #606060;
@@ -652,18 +652,18 @@ button:active {
 }
 
 .clients .flex .slide {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  border: 2px dotted var(--mainColor);
-  border-radius: 2px;
-  outline: 15px solid #effcfc;
-  width: 100%;
-  max-width: 600px;
-  /* Adjust max-width as needed */
-  min-width: 232px;
-  margin-right: 20px;
-  flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px dotted var(--mainColor);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    outline: 15px solid #effcfc;
+    min-width: 780px;
+    margin-right: 60px;
 }
 
 @media (max-width: 767px) {
