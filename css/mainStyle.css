@@ -130,9 +130,15 @@ button:active {
 /******/
 
 .header {
-  background-color: #fff;
-  color: #000;
-  padding-top: 15px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    border-radius: 4px;
+    z-index: 111111;
+    border: 2px solid var(--mainColor);
+    border-color: transparent transparent var(--mainColor);
 }
 
 .header .felx {
