@@ -1,25 +1,32 @@
-'use strict';
+"use strict";
 
-const slideRight = document.querySelector('.toRight');
-const slideLeft = document.querySelector('.toLeft');
-const slides = document.querySelectorAll('.slide');
-const widthSlide = 780;
-const totalSlides = slides.length;
+const slideRight = document.querySelector(".toRight");
+const slideLeft = document.querySelector(".toLeft");
+const slides = document.querySelectorAll(".slide");
 let count = 0;
 
-slideRight.addEventListener('click', function () {
-  count = (count + 1) % totalSlides;
-  updateSlider();
-});
-
-slideLeft.addEventListener('click', function () {
-  count = (count - 1 + totalSlides) % totalSlides;
-  updateSlider();
-});
+// Get slide width dynamically
+function getSlideWidth() {
+  return slides[0].offsetWidth;
+}
 
 function updateSlider() {
-  slides.forEach(slide => {
-    slide.style.transition = '.6s ease-out';
+  const widthSlide = getSlideWidth();
+  slides.forEach((slide) => {
+    slide.style.transition = ".6s ease-out";
     slide.style.transform = `translateX(${-count * widthSlide}px)`;
   });
 }
+
+slideRight.addEventListener("click", function () {
+  count = (count + 1) % slides.length;
+  updateSlider();
+});
+
+slideLeft.addEventListener("click", function () {
+  count = (count - 1 + slides.length) % slides.length;
+  updateSlider();
+});
+
+// Recalculate slide width on window resize
+window.addEventListener("resize", updateSlider);
