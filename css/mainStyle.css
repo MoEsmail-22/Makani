@@ -324,10 +324,6 @@ button:active {
   width: 500px;
   background-color: var(--mainColor);
   transform: translate(-50%, -50%) rotate(-22deg);
-  transform: translate(-50%, -50%) rotate(-22deg);
-  transform: translate(-50%, -50%) rotate(-22deg);
-  transform: translate(-50%, -50%) rotate(-22deg);
-  transform: translate(-50%, -50%) rotate(-22deg);
 }
 
 .about img {
