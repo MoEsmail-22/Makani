@@ -87,7 +87,7 @@ button:active {
     }
 }
 
-/******/
+/* Start header section */
 
 .header {
     background-color: #fff;
@@ -144,9 +144,11 @@ button:active {
     font-size: 16px;
 }
 
+/* End header section */
+
 /* Start title section */
 .title {
-    background-image: url('../images/Makani-home_files/about.jpg');
+    background-image: url('../images/call-to-action.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     font-weight: 500;
@@ -179,134 +181,61 @@ button:active {
 
 /* End title section */
 
-/* Start mission section */
-.mission {
-    margin: 30px 0;
-}
-
-.mission .container h3 {
-    color: var(--mainColor);
-    font-weight: 1000;
-}
-
-.mission .container p {
-    margin-top: 10px;
-    color: var(--grayText);
-    line-height: 1.6;
-}
-
-/* End mission section */
-
-/* Start team section */
-
-.team h3 {
-    color: var(--mainColor);
-    font-weight: 1000;
-}
-
-.team .container .members {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 100px;
+/* Start contact section */
+.contact {
     padding: 20px;
 }
 
-.team .container .member .image img {
-    width: 100%;
-    border-radius: 50%;
+.contact .container {
+    margin-top: 20px;
 }
 
-.team .container .member {
+.contact .container form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.team .container .member h5 {
-    color: var(--mainColor);
-    font-size: 15px;
-    margin-top: 20px;
-}
-
-.team .container .member .job-title {
-    margin: 10px 0;
-    color: var(--grayText);
-}
-
-.team .container .member .about {
-    color: var(--grayText);
-    text-align: center;
-}
-
-/* End team section */
-
-/* Start about us section */
-
-.about-us .container h3 {
-    color: var(--mainColor);
-    margin-top: 20px;
-    font-weight: 1000;
-}
-
-.about-us .container .services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 45px;
-    padding: 20px;
-}
-
-.about-us .container .services .service {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-us .container .services .service i {
-    color: var(--mainColor);
-    font-size: 40px;
-}
-
-.about-us .container .services .service h5 {
-    margin: 20px 0;
-    color: var(--mainColor);
-    font-weight: 700;
-}
-
-.about-us .container .services .service p {
-    color: var(--grayText);
-}
-
-/* End about us section */
-
-/* Start testmonials section */
-
-.testmonials {
-    padding: 20px;
-}
-
-.testmonials .container h3 {
-    color: var(--mainColor);
-    margin-top: 20px;
-    font-weight: 1000;
-}
-
-.testmonials .container .tests {
-    display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    padding: 20px;
+    height: 500px;
+    box-shadow: 0px 0px 10px 0px #d5d5d5;
+    border-radius: 5px;
 }
 
-.testmonials .container p {
-    background-color: #eeeeee46;
-    width: calc((100% - 20px) / 2);
+.contact .container form label {
+    color: var(--mainColor);
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+
+.contact .container form input {
     padding: 10px;
-    font-size: 13px;
-    line-height: 1.6;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    border-width: 1px;
 }
 
-/* End testmonials section */
+.contact .container form textarea {
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 10px;
+}
+
+.contact .container form input[type="submit"] {
+    color: white;
+    background-color: var(--mainColor);
+    cursor: pointer;
+    transition-duration: var(--transitionDuration);
+    border-width: 2px;
+}
+
+.contact .container form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* End contact section */
 
 /* Start footer section */
 footer {
