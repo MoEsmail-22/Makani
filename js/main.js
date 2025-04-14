@@ -30,3 +30,19 @@ slideLeft.addEventListener("click", function () {
 
 // Recalculate slide width on window resize
 window.addEventListener("resize", updateSlider);
+
+function updateSlider() {
+  slides.forEach(slide => {
+    slide.style.transition = '.6s ease-out';
+    slide.style.transform = `translateX(${-count * widthSlide}px)`;
+  });
+}
+
+function openNav() {
+  document.getElementById('mySidenav').style.width = '250px';
+}
+
+function closeNav() {
+  document.getElementById('mySidenav').style.width = '0';
+}
+
