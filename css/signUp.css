@@ -235,6 +235,30 @@ input[type="submit"]:button:active {
     outline: none;
     border: 2px solid #eee;
     transition: box-shadow .4s;
+    width: 100%;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.input-group {
+    position: relative;
+    margin-top: 15px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    z-index: 2;
+}
+
+.toggle-password:hover {
+    color: #2196F3;
 }
 
 .sign-up .container form input:focus {

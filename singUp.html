@@ -59,16 +59,27 @@
                 <input type="text" name="Username" id="username">
                 <label for="email">Email</label>
                 <input type="email" name="Email" id="email">
-                <label for="password">Password</label>
-                <input type="password" name="Password" id="password">
-                <label for="conf-pass">Confirm Password</label>
-                <input type="password" id="conf-pass">
+                <div class="password-wrapper">
+                    <label for="password">Password</label>
+                    <div class="input-group">
+                        <input type="password" name="Password" id="password">
+                        <i class="fa-regular fa-eye-slash toggle-password"></i>
+                    </div>
+                </div>
+                <div class="password-wrapper">
+                    <label for="conf-pass">Confirm Password</label>
+                    <div class="input-group">
+                        <input type="password" id="conf-pass">
+                        <i class="fa-regular fa-eye-slash toggle-password"></i>
+                    </div>
+                </div>
+                <div id="passwordError" style="color: red; display: none;">Passwords do not match!</div>
                 <label class="icon-checkbox">
                     <input type="checkbox" name="agree" required>
                     <i class="fa-regular fa-circle-check"></i>
                     <span>I agree to the terms and conditions</span>
                 </label>
-                <input type="submit" value="Sign Up">
+                <input type="submit" id="submit" value="Sign Up">
             </form>
             <p class="another-opt"></p>
             <div class="social">
@@ -80,8 +91,7 @@
         </div>
     </div>
     <!-- End sign up section -->
-
-    <script src="js/main.js"></script>
+    <script src="js/signup.js"></script>
 </body>
 
 </html>
