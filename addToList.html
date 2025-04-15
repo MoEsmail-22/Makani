@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add property</title>
+
+    <link rel="stylesheet" href="./css/addToList.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="add360">
+        <div class="overlay none ">
+            <div class="container">
+                <div class="top">
+                    <h2>Add 360 image</h2>
+                    <button class="close-modal">×</button>
+                </div>
+                <h3>100$ will be add to the total fees</h3>
+                <div class="check">
+                    <button class="ok button360  ">Ok</button>
+                    <button class="cancel close-modal button360 ">cancel</button>
+                </div>
+                <div class="form none">
+                    <input type="file" name="images" id="360Images" multiple />
+                    <h4>upload images</h4>
+                    <label for="360Images" class="upload-label">
+                        <!-- Your SVG icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"
+                            fill="#fff">
+                            <path
+                                d="M448 80c8.8 0 16 7.2 16 16l0 319.8-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3L48 96c0-8.8 7.2-16 16-16l384 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+                        </svg>
+                    </label>
+                </div>
+                <button class="done  none">done</button>
+            </div>
+        </div>
+        <div class="header blure">
+            <div class="container">
+                <div class="felx">
+                    <div class="sliderNav">
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="index.html">home</a>
+                            <a href="#">Properties</a>
+                            <a href="about.html#testmonials">Testmonials</a>
+                            <a href="about.html">about</a>
+                            <a href="contact.html">Contact</a>
+                            <a class="add" href="#"><button>Add Property</button></a>
+                        </div>
+                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                    </div>
+                    <div class="logo"><a href="#"><img src="./images/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="user">
+                        <a href="signIn.html" style="color: #fff;"><button>login</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="landding blure">
+            <div class="overlayLand">
+                <div class="container">
+                    <h1>Let's find you a buyer</h1>
+                </div>
+            </div>
+        </div>
+        <div class="list blure">
+            <div class="container">
+                <h3>list your property</h3>
+                <form action="newListing">
+                    <label for="title">property titel</label>
+                    <input type="text" id="title">
+                    <label for="price">price</label>
+                    <input type="number" id="price" min="0">
+                    <label for="location">location</label>
+                    <input type="text" id="location">
+                    <label for="rentOrSale">Rent or Sale</label>
+                    <select id="rentOrSale">
+                        <option value="rent">Rent</option>
+                        <option value="sale">Sale</option>
+                    </select>
+                    <label for="type">type</label>
+                    <select id="type">
+                        <option value="">Select Property Type</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="villa">Villa</option>
+                        <option value="commercial">Commercial</option>
+                    </select>
+                    <label for="description">description</label>
+
+                    <textarea name="descripation" id="description"></textarea>
+
+                    <input type="file" name="images" id="normalImages" multiple />
+                    <h4>upload images</h4>
+                    <label for="normalImages" class="upload-label">
+                        <!-- Your SVG icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"
+                            fill="#fff">
+                            <path
+                                d="M448 80c8.8 0 16 7.2 16 16l0 319.8-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3L48 96c0-8.8 7.2-16 16-16l384 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+                        </svg>
+                    </label>
+                    <button class="overlay360">360° image</button>
+                    <input type="button" value="submit">
+                </form>
+            </div>
+        </div>
+        <!--  -->
+        <footer class="blure">
+            <div class="container">
+                <div class="logo"><a href="#"><img src="./images/fotter logo.png" alt="logo"></a>
+                </div>
+                <div class="top">
+                    <div class="contact" id="contact">
+                        <h3>Get in touch</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i> 123 Street, newYork,Algiza</li>
+                            <li><i class="fa-solid fa-phone"></i> +0123456789</li>
+                            <li><i class="fa-solid fa-envelope"></i> info@makani.com</li>
+                            <li>
+                                <ul>
+                                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                                    <li><i class="fa-brands fa-x-twitter"></i></li>
+                                    <li><i class="fa-brands fa-instagram"></i></li>
+                                    <li><i class="fa-solid fa-drumstick-bite"></i></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <h3>Quick links</h3>
+                        <ul>
+                            <li><a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>About</a></li>
+                            <li><a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>Contact</a></li>
+                            <li><a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>Properties</a></li>
+                            <li><a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>Terms</a></li>
+                            <li><a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>Polices</a></li>
+                        </ul>
+                    </div>
+                    <div class="gallery">
+                        <h3>Photo Gallery</h3>
+                        <div class="images">
+                            <ul>
+                                <li><img src="./images/property-1.jpg" alt=""></li>
+                                <li><img src="./images/property-2.jpg" alt=""></li>
+                                <li><img src="./images/property-3.jpg" alt=""></li>
+                                <li><img src="./images/property-4.jpg" alt=""></li>
+                                <li><img src="./images/property-5.jpg" alt=""></li>
+                                <li><img src="./images/property-6.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="news">
+                            <div class="text">
+                                <h3>News Letters</h3>
+                                <p>Subscribe to resive the latest listed items</p>
+                            </div>
+                            <form action="sub">
+                                <input type="email" placeholder="@makini.com">
+                                <input type="submit" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p>© 2025 Makani | all right resrved</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!--  -->
+    <script src="js/addToList.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
