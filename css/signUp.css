@@ -55,6 +55,37 @@ input[type="submit"]:button:active {
     background-color: #fff;
 }
 
+input[type="password"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: inherit;
+    font-size: 16px;
+    /* Prevents mobile zooming */
+    padding: 12px 15px;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    background-color: white;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+/* Specifically target mobile browsers */
+@media (pointer: coarse) {
+    input[type="password"] {
+        font-size: 16px;
+        min-height: 44px;
+        /* Better touch target */
+    }
+}
+
+/* Focus state */
+input[type="password"]:focus {
+    border-color: var(--mainColor);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(43, 35, 125, 0.2);
+}
+
 .container {
     width: 100%;
     padding: 0 16px;
