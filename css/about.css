@@ -30,6 +30,50 @@ a {
     color: #000;
 }
 
+.scroll {
+    height: calc(100% - 500px);
+}
+
+.toTop {
+    position: sticky;
+    top: 530px;
+    margin-top: 20px;
+    left: 1250px;
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--mainColor);
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 9999;
+    transform: rotate(-90deg);
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    text-decoration: none;
+    -webkit-transition: background-color 0.5s ease, transform 0.5s ease;
+    -moz-transition: background-color 0.5s ease, transform 0.5s ease;
+    -ms-transition: background-color 0.5s ease, transform 0.5s ease;
+    -o-transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+@media (max-width: 767px) {
+    .toTop {
+        top: 750px;
+    }
+}
+
+.toTop i {
+    transition: var(--transitionDuration);
+
+}
+
+.toTop:hover i {
+    transform: translateX(5px);
+}
+
 button {
     padding: 10px 15px;
     background-color: var(--mainColor);
@@ -101,10 +145,70 @@ button:active {
     border-color: transparent transparent var(--mainColor);
 }
 
-.header .flex {
+.header .felx {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header img {
+    width: 110px;
+    margin-left: -50px;
+}
+
+.header .logo {
+    justify-self: center;
+}
+
+/*/*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999999999999999999999;
+    top: 0;
+    left: 0;
+    background-color: var(--mainColor);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 0px 8px 20px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav button {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.sidenav a:not(:last-of-type):hover {
+    padding-left: 45px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -112,14 +216,6 @@ button:active {
         flex-direction: column;
         row-gap: 20px;
     }
-}
-
-.header img {
-    width: 110px;
-}
-
-.header .nav {
-    display: flex;
 }
 
 @media (max-width: 767px) {
@@ -130,7 +226,7 @@ button:active {
 
 .header .nav li {
     font-weight: 400;
-    font-size: 13px;
+    font-size: 18px;
     text-transform: capitalize;
     transition: var(--transitionDuration);
 }
@@ -141,7 +237,7 @@ button:active {
 
 .header li:hover {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 /* Start title section */

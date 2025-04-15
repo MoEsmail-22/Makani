@@ -27,16 +27,24 @@
     <!-- Start header section -->
     <div class="header">
         <div class="container">
-            <div class="flex">
+            <div class="felx">
+                <div class="sliderNav">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html">home</a>
+                        <a href="index.html#properties">Properties</a>
+                        <a href="about.html#testmonials">Testmonials</a>
+                        <a href="about.html">about</a>
+                        <a href="contact.html">Contact</a>
+                        <a class="add" href="#"><button>Add Property</button></a>
+                    </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                </div>
                 <div class="logo"><a href="#"><img src="./images/logo.png" alt="logo"></a>
                 </div>
-                <ul class="nav">
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="index.html#properties">Properties</a></li>
-                    <li><a href="about.html#testmonials">Testmonials</a></li>
-                    <li><a href="about.html">about</a></li>
-                </ul>
-                <a class="add" href="#"><button>Add Property</button></a>
+                <div class="user">
+                    <a href="signIn.html" style="color: #fff;"><button>login</button></a>
+                </div>
             </div>
         </div>
     </div>
@@ -133,6 +141,7 @@
         </div>
     </footer>
     <!-- End footer section -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
