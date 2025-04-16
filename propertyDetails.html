@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details - Makani</title>
+    <link rel="stylesheet" href="./css/mainStyle.css">
+    <link rel="stylesheet" href="./css/propertyDetails.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <script src="./js/propertyRedirect.js" defer></script>
+</head>
+
+<body>
+    <!-- Start header section -->
+    <div class="header">
+        <div class="container">
+            <div class="felx">
+                <div class="sliderNav">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html">Home</a>
+                        <a href="#properties">Properties</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a class="add" href="addToList.html"><button>Add Property</button></a>
+                    </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                </div>
+                <div class="logo"><a href="index.html"><img src="./images/logo.png" alt="logo"></a>
+                </div>
+                <div class="user">
+                    <a href="signIn.html" style="color: #fff;"><button>Login</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header section -->
+
+    <!-- Start property details section -->
+    <div class="property-details-container">
+        <div class="container">
+            <!-- Property Image Gallery -->
+            <div class="property-gallery">
+                <div class="main-image">
+                    <img src="./images/property-1.jpg" alt="Elegant Family Home" id="mainPropertyImage">
+                    <button class="gallery-nav prev"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="gallery-nav next"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="thumbnail-gallery">
+                    <img src="./images/property-1.jpg" alt="Property View 1" class="active" onclick="changeMainImage(this.src)">
+                    <img src="./images/property-2.jpg" alt="Property View 2" onclick="changeMainImage(this.src)">
+                    <img src="./images/property-3.jpg" alt="Property View 3" onclick="changeMainImage(this.src)">
+                </div>
+            </div>
+
+            <!-- Property Information -->
+            <div class="property-info">
+                <h1 class="property-title">Elegant Family Home</h1>
+                <p class="property-price">$1,200,000</p>
+                <p class="property-location"><i class="fa-solid fa-location-dot"></i> Los Angeles, California</p>
+            </div>
+
+            <!-- Property Details and Agent Information -->
+            <div class="details-agent-container">
+                <!-- Property Details -->
+                <div class="property-details">
+                    <h2>Property Details</h2>
+                    <ul>
+                        <li><span>Bedrooms:</span> 4</li>
+                        <li><span>Bathrooms:</span> 3</li>
+                        <li><span>Area:</span> 2,500 sq ft</li>
+                        <li><span>Year Built:</span> 2020</li>
+                        <li><span>Property Type:</span> Single Family</li>
+                        <li><span>Amenities:</span> Pool, Garage, Garden</li>
+                    </ul>
+                </div>
+
+                <!-- Agent Information -->
+                <div class="agent-information">
+                    <h2>Agent Information</h2>
+                    <div class="agent-details">
+                        <img src="./images/team-2.jpg" alt="Agent Photo">
+                        <div class="agent-contact">
+                            <h3>John Smith</h3>
+                            <p><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
+                            <p><i class="fa-solid fa-envelope"></i> john@makani.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inquiry Form -->
+            <div class="inquiry-form">
+                <h2>Inquiry Form</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send</button>
+                </form>
+            </div>
+
+            <!-- Property Location section removed as requested -->
+
+            <!-- Related Properties -->
+            <div class="related-properties">
+                <h2>Related Properties</h2>
+                <div class="property-cards">
+                    <div class="property-card">
+                        <img src="./images/property-2.jpg" alt="Cozy Apartment">
+                        <div class="card-details">
+                            <h3>Cozy Apartment</h3>
+                            <p class="price">$750,000</p>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <img src="./images/property-3.jpg" alt="Luxury Villa">
+                        <div class="card-details">
+                            <h3>Luxury Villa</h3>
+                            <p class="price">$2,500,000</p>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <img src="./images/property-4.jpg" alt="Modern Townhouse">
+                        <div class="card-details">
+                            <h3>Modern Townhouse</h3>
+                            <p class="price">$950,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End property details section -->
+
+    <!-- Start footer section -->
+    <footer>
+        <div class="container">
+            <div class="top">
+                <div class="contact">
+                    <div class="logo"><img src="./images/logo.png" alt=""></div>
+                    <div class="info">
+                        <h3>Get In Touch</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</li>
+                            <li><i class="fa-solid fa-phone"></i> +012 345 67890</li>
+                            <li><i class="fa-solid fa-envelope"></i> info@makani.com</li>
+                        </ul>
+                        <div class="social">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="gallery">
+                    <h3>Photo Gallery</h3>
+                    <div class="images">
+                        <ul>
+                            <li><img src="./images/property-1.jpg" alt=""></li>
+                            <li><img src="./images/property-2.jpg" alt=""></li>
+                            <li><img src="./images/property-3.jpg" alt=""></li>
+                            <li><img src="./images/property-4.jpg" alt=""></li>
+                            <li><img src="./images/property-5.jpg" alt=""></li>
+                            <li><img src="./images/property-6.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="news">
+                        <div class="text">
+                            <h3>News Letters</h3>
+                            <p>Subscribe to receive the latest listed items</p>
+                        </div>
+                        <form action="sub">
+                            <input type="email" placeholder="@makani.com">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>© 2025 Makani | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer section -->
+
+    <script src="js/main.js"></script>
+    <!-- Image navigation functionality moved to propertyRedirect.js -->
+    <script>
+        // Function to change the main property image moved to propertyRedirect.js
+    </script>
+    <script>
+        // Initialize the navigation functions
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>
