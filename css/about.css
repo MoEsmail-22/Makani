@@ -156,6 +156,13 @@ button:active {
     margin-left: -50px;
 }
 
+@media (max-width: 767px) {
+    .header img {
+        width: 90px;
+        margin-left: 0;
+    }
+}
+
 .header .logo {
     justify-self: center;
 }
@@ -372,6 +379,7 @@ button:active {
 
 .about-us .container .services .service p {
     color: var(--grayText);
+    text-align: center;
 }
 
 /* End about us section */
