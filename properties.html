@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - Makani Real Estate</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles specific to properties page */
+        .property-filters-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+        
+        .property-filters-container h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .filter-group {
+            margin-bottom: 15px;
+        }
+        
+        .filter-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .filter-group select, .filter-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .price-range {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .price-range input {
+            flex: 1;
+        }
+        
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .filter-buttons button {
+            flex: 1;
+        }
+        
+        .properties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 40px;
+        }
+        
+        .pagination a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .pagination a:hover, .pagination a.active {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .properties-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .sort-options {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .sort-options select {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .view-options {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .view-option {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .view-option:hover, .view-option.active {
+            background-color: #3498db;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>Makani</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html" class="active">Properties</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="signin.html" class="btn btn-outline">Sign In</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80'); background-size: cover; background-position: center; padding: 60px 0; color: white; text-align: center;">
+        <div class="container">
+            <h1>Browse Properties</h1>
+            <p>Find your perfect home from our extensive property listings</p>
+        </div>
+    </section>
+
+    <section class="properties-section" style="padding: 60px 0;">
+        <div class="container">
+            <div class="row" style="display: flex; flex-wrap: wrap; gap: 30px;">
+                <!-- Sidebar Filters -->
+                <div class="sidebar" style="flex: 1; min-width: 250px;">
+                    <div class="property-filters-container">
+                        <h3>Filter Properties</h3>
+                        <form>
+                            <div class="filter-group">
+                                <label>Property Type</label>
+                                <select>
+                                    <option value="">All Types</option>
+                                    <option value="apartment">Apartment</option>
+                                    <option value="house">House</option>
+                                    <option value="villa">Villa</option>
+                                    <option value="commercial">Commercial</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label>Location</label>
+                                <select>
+                                    <option value="">All Locations</option>
+                                    <option value="downtown">Downtown</option>
+                                    <option value="suburbs">Suburbs</option>
+                                    <option value="beachfront">Beachfront</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label>Price Range</label>
+                                <div class="price-range">
+                                    <input type="text" placeholder="Min">
+                                    <input type="text" placeholder="Max">
+                                </div>
+                            </div>
+                            <div class="filter-group">
+                                <label>Bedrooms</label>
+                                <select>
+                                    <option value="">Any</option>
+                                    <option value="1">1+</option>
+                                    <option value="2">2+</option>
+                                    <option value="3">3+</option>
+                                    <option value="4">4+</option>
+                                    <option value="5">5+</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label>Bathrooms</label>
+                                <select>
+                                    <option value="">Any</option>
+                                    <option value="1">1+</option>
+                                    <option value="2">2+</option>
+                                    <option value="3">3+</option>
+                                    <option value="4">4+</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label>Property Status</label>
+                                <select>
+                                    <option value="">All</option>
+                                    <option value="sale">For Sale</option>
+                                    <option value="rent">For Rent</option>
+                                </select>
+                            </div>
+                            <div class="filter-buttons">
+                                <button type="submit" class="btn btn-primary">Apply Filters</button>
+                                <button type="reset" class="btn btn-outline">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Properties Content -->
+                <div class="properties-content" style="flex: 3;">
+                    <div class="properties-header">
+                        <div class="results-count">
+                            <p>Showing <strong>12</strong> properties</p>
+                        </div>
+                        <div class="sort-options">
+                            <span>Sort by:</span>
+                            <select>
+                                <option value="newest">Newest</option>
+                                <option value="price-asc">Price (Low to High)</option>
+                                <option value="price-desc">Price (High to Low)</option>
+                                <option value="popular">Most Popular</option>
+                            </select>
+                        </div>
+                        <div class="view-options">
+                            <div class="view-option active">
+                                <i class="fas fa-th-large"></i>
+                            </div>
+                            <div class="view-option">
+                                <i class="fas fa-list"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="properties-grid">
+                        <!-- Property Card 1 -->
+                        <div class="property-card">
+                            <div class="property-image">
+                                <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Luxury Villa">
+                                <span class="property-tag">For Sale</span>
+                            </div>
+                            <div class="property-details">
+                                <h3>Luxury Villa</h3>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Palm Jumeirah, Dubai</p>
+                                <p class="property-price">$1,200,000</p>
+                                <div class="property-features">
+                                    <span><i class="fas fa-bed"></i> 4 Beds</span>
+                                    <span><i class="fas fa-bath"></i> 3 Baths</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 3,500 sqft</span>
+                                </div>
+                                <a href="property-details.html" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Property Card 2 -->
+                        <div class="property-card">
+                            <div class="property-image">
+                                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Modern Apartment">
+                                <span class="property-tag">For Rent</span>
+                            </div>
+                            <div class="property-details">
+                                <h3>Modern Apartment</h3>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Downtown, Dubai</p>
+                                <p class="property-price">$2,500/month</p>
+                                <div class="property-features">
+                                    <span><i class="fas fa-bed"></i> 2 Beds</span>
+                                    <span><i class="fas fa-bath"></i> 2 Baths</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 1,200 sqft</span>
+                                </div>
+                                <a href="property-details.html" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Property Card 3 -->
+                        <div class="property-card">
+                            <div class="property-image">
+                                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80" alt="Family Home">
+                                <span class="property-tag">For Sale</span>
+                            </div>
+                            <div class="property-details">
+                                <h3>Family Home</h3>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Arabian Ranches, Dubai</p>
+                                <p class="property-price">$850,000</p>
+                                <div class="property-features">
+                                    <span><i class="fas fa-bed"></i> 3 Beds</span>
+                                    <span><i class="fas fa-bath"></i> 2 Baths</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 2,200 sqft</span>
+                                </div>
+                                <a href="property-details.html" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Property Card 4 -->
+                        <div class="property-card">
+                            <div class="property-image">
+                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Luxury Penthouse">
+                                <span class="property-tag">For Sale</span>
+                            </div>
+                            <div class="property-details">
+                                <h3>Luxury Penthouse</h3>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Dubai Marina</p>
+                                <p class="property-price">$1,800,000</p>
+                                <div class="property-features">
+                                    <span><i class="fas fa-bed"></i> 3 Beds</span>
+                                    <span><i class="fas fa-bath"></i> 3 Baths</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 2,800 sqft</span>
+                                </div>
+                                <a href="property-details.html" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Property Card 5 -->
+                        <div class="property-card">
+                            <div class="property-image">
+                                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Modern Villa">
+                                <span class="property-tag">For Sale</span>
+                            </div>
+                            <div class="property-details">
+                                <h3>Modern Villa</h3>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Emirates Hills, Dubai</p>
+                                <p class="property-price">$2,500,000</p>
+                                <div class="property-features">
+                                    <span><i class="fas fa-bed"></i> 5 Beds</span>
+                                    <span><i class="fas fa-bath"></i> 5 Baths</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 5,000 sqft</span>
+                                </div>
+                                <a href="property-details.html" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Property Card 6 -->
+                        <div class="property-card">
+                            <div class="property-image">
+                                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Cozy Apartment">
+                                <span class="property-tag">For Rent</span>
+                            </div>
+                            <div class="property-details">
+                                <h3>Cozy Apartment</h3>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Jumeirah Lake Towers, Dubai</p>
+                                <p class="property-price">$1,800/month</p>
+                                <div class="property-features">
+                                    <span><i class="fas fa-bed"></i> 1 Bed</span>
+                                    <span><i class="fas fa-bath"></i> 1 Bath</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 800 sqft</span>
+                                </div>
+                                <a href="property-details.html" class="btn btn-outline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pagination">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Makani</h2>
+                    <p>Your trusted partner in real estate.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Real Estate Ave, Dubai, UAE</p>
+                    <p><i class="fas fa-phone"></i> +971 4 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@makani.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Makani Real Estate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

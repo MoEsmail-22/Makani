@@ -1,354 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Makani-home</title>
-    <link rel="stylesheet" href="./css/mainStyle.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
-        rel="stylesheet">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
-        rel="stylesheet">
+    <title>Makani Real Estate</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="header">
+    <header>
         <div class="container">
-            <div class="felx">
-                <div class="sliderNav">
-                    <div id="mySidenav" class="sidenav">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a href="index.html">home</a>
-                        <a href="#properties">Properties</a>
-                        <a href="about.html#testmonials">Testmonials</a>
-                        <a href="about.html">about</a>
-                        <a href="contact.html">Contact</a>
-                        <a class="add" href="addToList.html"><button>Add Property</button></a>
-                    </div>
-                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <nav>
+                <div class="logo">
+                    <h1>Makani</h1>
                 </div>
-                <div class="logo"><a href="#"><img src="./images/logo.png" alt="logo"></a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="signin.html" class="btn btn-outline">Sign In</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
                 </div>
-                <div class="user">
-                    <a href="signIn.html" style="color: #fff;"><button>login</button></a>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
                 </div>
-            </div>
+            </nav>
         </div>
-    </div>
-    <div class="landing">
-        <div class="container">
-            <div class="flex">
-                <h1>apartments,<br>homes ,Studios , <br>offices ,...</h1>
-                <div class="search">
-                    <input type="text " placeholder="Enter (addriess,city, ZIP code )">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="searchBar">
-        <form action="search">
-            <input type="search" placeholder="Search" id="searchKey">
-            <select id="property-type">
-                <option value="">Select Property Type</option>
-                <option value="house">House</option>
-                <option value="apartment">Apartment</option>
-                <option value="villa">Villa</option>
-                <option value="commercial">Commercial</option>
-            </select>
-            <select id="property-location">
-                <option value="">location</option>
-                <option value="house">House</option>
-                <option value="apartment">Apartment</option>
-                <option value="villa">Villa</option>
-                <option value="commercial">Commercial</option>
-            </select>
-            <input type="submit" value="Search">
-        </form>
-    </div>
-    <div class="scroll">
-        <a href="#" class="toTop"><i class="fa-solid fa-arrow-right"></i></a>
-        <div class="about" id="about">
-            <div class="container">
-                <div class="flex">
-                    <div class="image"><img src="./images/about.jpg" alt="vailla with pool (about us)"></div>
-                    <div class="text">
-                        <h2>#1 place to find the perfect <br> property</h2>
-                        <p>Welcome to Mankini, where finding your dream property . Whether buying,
-                            selling, or investing,
-                            we offer expert top listings.<br> Our team ensures a smooth and hassle-free
-                            real
-                            estate experience. <br> From cozy
-                            homes to luxury estates, we’ve got you covered.</p>
-                        <ul>
-                            <li><i class="fa-solid fa-check  "></i> Sell</li>
-                            <li><i class="fa-solid fa-check  "></i> Buy</li>
-                            <li><i class="fa-solid fa-check  "></i> Rent</li>
-                        </ul>
-                        <a href="#about"><button>Read More</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="propertyList" id="properties">
-            <div class="container">
-                <div class="head">
-                    <div class="spcialHeader">
-                        <h2>Property Listing</h2>
-                        <p>Discover a wide range of properties, from cozy apartments to luxurious villas, tailored .
-                            <br> Find your perfect
-                            home or investment with our expert listings and guidance!
-                        </p>
-                    </div>
-                    <div class="switch">
-                        <button>Featured</button>
-                        <button>For Sell</button>
-                        <button>For Rent</button>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="box">
-                        <img src="./images/property-1.jpg" alt="">
-                        <div class="text">
-                            <p class="price">12,345$</p>
-                            <p class="titel">Golden Urban For sell</p>
-                            <p class="location"> <i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA
-                            </p>
-                            <ul class="flex">
-                                <li> <i class="fa-solid fa-ruler-combined"></i> 1000SqFt</li>
-                                <li> <i class="fa-solid fa-bed"></i> 5 Bed</li>
-                                <li><i class="fa-solid fa-bath"></i> 3 Bath</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img src="./images/property-2.jpg" alt="">
-                        <div class="text">
-                            <p class="price">12,345$</p>
-                            <p class="titel">Golden Urban For sell</p>
-                            <p class="location"> <i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA
-                            </p>
-                            <ul class="flex">
-                                <li> <i class="fa-solid fa-ruler-combined"></i> 1000SqFt</li>
-                                <li> <i class="fa-solid fa-bed"></i> 5 Bed</li>
-                                <li><i class="fa-solid fa-bath"></i> 3 Bath</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img src="./images/property-3.jpg" alt="">
-                        <div class="text">
-                            <p class="price">12,345$</p>
-                            <p class="titel">Golden Urban For sell</p>
-                            <p class="location"> <i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA
-                            </p>
-                            <ul class="flex">
-                                <li> <i class="fa-solid fa-ruler-combined"></i> 1000SqFt</li>
-                                <li> <i class="fa-solid fa-bed"></i> 5 Bed</li>
-                                <li><i class="fa-solid fa-bath"></i> 3 Bath</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img src="./images/property-4.jpg" alt="">
-                        <div class="text">
-                            <p class="price">12,345$</p>
-                            <p class="titel">Golden Urban For sell</p>
-                            <p class="location"> <i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA
-                            </p>
-                            <ul class="flex">
-                                <li> <i class="fa-solid fa-ruler-combined"></i> 1000SqFt</li>
-                                <li> <i class="fa-solid fa-bed"></i> 5 Bed</li>
-                                <li><i class="fa-solid fa-bath"></i> 3 Bath</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img src="./images/property-5.jpg" alt="">
-                        <div class="text">
-                            <p class="price">12,345$</p>
-                            <p class="titel">Golden Urban For sell</p>
-                            <p class="location"> <i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA
-                            </p>
-                            <ul class="flex">
-                                <li> <i class="fa-solid fa-ruler-combined"></i> 1000SqFt</li>
-                                <li> <i class="fa-solid fa-bed"></i> 5 Bed</li>
-                                <li><i class="fa-solid fa-bath"></i> 3 Bath</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img src="./images/property-6.jpg" alt="">
-                        <div class="text">
-                            <p class="price">12,345$</p>
-                            <p class="titel">Golden Urban For sell</p>
-                            <p class="location"> <i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA
-                            </p>
-                            <ul class="flex">
-                                <li> <i class="fa-solid fa-ruler-combined"></i> 1000SqFt</li>
-                                <li> <i class="fa-solid fa-bed"></i> 5 Bed</li>
-                                <li><i class="fa-solid fa-bath"></i> 3 Bath</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <button>Browse More Propertys</button>
-            </div>
-        </div>
-        <div class="clients" id="testmonials">
-            <div class="container">
-                <div class="spacialHeader">
-                    <h2>our clients say!</h2>
-                    <p>We value our clients and strive to provide a seamless real estate experience. <br> Your
-                        satisfaction
-                        is our priority, whether
-                        you're buying, selling, or investing. <br> Trust us to guide you every step of the way!</p>
-                </div>
-                <div class="flex">
-                    <div class="arrow toLeft"><i class="fa-solid fa-arrow-left"></i></div>
-                    <div class="slider">
-                        <div class="slide first">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, reprehenderit
-                                obcaecati
-                                sunt debitis aliquam velit at veritatis consectetur. Facere sunt debitis aliquam
-                                velit
-                                at veritatis consectetur. Facere</p>
-                            <div class="box">
-                                <img src="./images/team-4.jpg" alt="">
-                                <div class="text">
-                                    <h4>client</h4>
-                                    <p>Person</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, reprehenderit
-                                obcaecati
-                                sunt debitis aliquam velit at veritatis consectetur. Facere sunt debitis aliquam
-                                velit
-                                at veritatis consectetur. Facere</p>
-                            <div class="box">
-                                <img src="./images/testimonial-3.jpg" alt="">
-                                <div class="text">
-                                    <h4>client</h4>
-                                    <p>Person</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, reprehenderit
-                                obcaecati
-                                sunt debitis aliquam velit at veritatis consectetur. Facere sunt debitis aliquam
-                                velit
-                                at veritatis consectetur. Facere</p>
-                            <div class="box">
-                                <img src="./images/team-2.jpg" alt="">
-                                <div class="text">
-                                    <h4>client</h4>
-                                    <p>Person</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide last">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, reprehenderit
-                                obcaecati
-                                sunt debitis aliquam velit at veritatis consectetur. Facere sunt debitis aliquam
-                                velit
-                                at veritatis consectetur. Facere</p>
-                            <div class="box">
-                                <img src="./images/testimonial-2.jpg" alt="">
-                                <div class="text">
-                                    <h4>client</h4>
-                                    <p>Person</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="arrow toRight">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <div class="container">
-                <div class="logo"><a href="#"><img src="./images/fotter logo.png" alt="logo"></a>
-                </div>
-                <div class="top">
-                    <div class="contact" id="contact">
-                        <h3>Get in touch</h3>
-                        <ul>
-                            <li><i class="fa-solid fa-location-dot"></i> 123 Street, newYork,Algiza</li>
-                            <li><i class="fa-solid fa-phone"></i> +0123456789</li>
-                            <li><i class="fa-solid fa-envelope"></i> info@makani.com</li>
-                            <li>
-                                <ul>
-                                    <li><i class="fa-brands fa-facebook-f"></i></li>
-                                    <li><i class="fa-brands fa-x-twitter"></i></li>
-                                    <li><i class="fa-brands fa-instagram"></i></li>
-                                    <li><i class="fa-solid fa-drumstick-bite"></i></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="links">
-                        <h3>Quick links</h3>
-                        <ul>
-                            <li><a href="#">
-                                    <i class="fa-solid fa-angles-right"></i>About</a></li>
-                            <li><a href="#">
-                                    <i class="fa-solid fa-angles-right"></i>Contact</a></li>
-                            <li><a href="#">
-                                    <i class="fa-solid fa-angles-right"></i>Properties</a></li>
-                            <li><a href="#">
-                                    <i class="fa-solid fa-angles-right"></i>Terms</a></li>
-                            <li><a href="#">
-                                    <i class="fa-solid fa-angles-right"></i>Polices</a></li>
-                        </ul>
-                    </div>
-                    <div class="gallery">
-                        <h3>Photo Gallery</h3>
-                        <div class="images">
-                            <ul>
-                                <li><img src="./images/property-1.jpg" alt=""></li>
-                                <li><img src="./images/property-2.jpg" alt=""></li>
-                                <li><img src="./images/property-3.jpg" alt=""></li>
-                                <li><img src="./images/property-4.jpg" alt=""></li>
-                                <li><img src="./images/property-5.jpg" alt=""></li>
-                                <li><img src="./images/property-6.jpg" alt=""></li>
-                            </ul>
-                        </div>
-                        <div class="news">
-                            <div class="text">
-                                <h3>News Letters</h3>
-                                <p>Subscribe to resive the latest listed items</p>
-                            </div>
-                            <form action="sub">
-                                <input type="email" placeholder="@makini.com">
-                                <input type="submit" value="Subscribe">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <p>© 2025 Makani | all right resrved</p>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <script src="./js/main.js"></script>
-</body>
+    </header>
 
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Find Your Dream Home</h1>
+                <p>Discover the perfect property that suits your lifestyle and preferences</p>
+                <div class="search-box">
+                    <input type="text" placeholder="Search for properties...">
+                    <button class="btn btn-primary">Search</button>
+                </div>
+                <div class="property-filters">
+                    <select>
+                        <option>Property Type</option>
+                        <option>Apartment</option>
+                        <option>House</option>
+                        <option>Villa</option>
+                        <option>Commercial</option>
+                    </select>
+                    <select>
+                        <option>Location</option>
+                        <option>Downtown</option>
+                        <option>Suburbs</option>
+                        <option>Beachfront</option>
+                    </select>
+                    <select>
+                        <option>Price Range</option>
+                        <option>$100k - $200k</option>
+                        <option>$200k - $500k</option>
+                        <option>$500k - $1M</option>
+                        <option>$1M+</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-properties">
+        <div class="container">
+            <h2 class="section-title">Featured Properties</h2>
+            <div class="property-grid">
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Luxury Villa">
+                        <span class="property-tag">For Sale</span>
+                    </div>
+                    <div class="property-details">
+                        <h3>Luxury Villa</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Palm Jumeirah, Dubai</p>
+                        <p class="property-price">$1,200,000</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 3,500 sqft</span>
+                        </div>
+                        <a href="property-details.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Modern Apartment">
+                        <span class="property-tag">For Rent</span>
+                    </div>
+                    <div class="property-details">
+                        <h3>Modern Apartment</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Downtown, Dubai</p>
+                        <p class="property-price">$2,500/month</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 2 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1,200 sqft</span>
+                        </div>
+                        <a href="property-details.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80" alt="Family Home">
+                        <span class="property-tag">For Sale</span>
+                    </div>
+                    <div class="property-details">
+                        <h3>Family Home</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Arabian Ranches, Dubai</p>
+                        <p class="property-price">$850,000</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2,200 sqft</span>
+                        </div>
+                        <a href="property-details.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="properties.html" class="btn btn-primary">View All Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Property Sales</h3>
+                    <p>Find your dream home with our extensive listings of properties for sale.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Rental Services</h3>
+                    <p>Explore our rental properties for short-term or long-term accommodation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Property Management</h3>
+                    <p>Let us handle the management of your property with our professional services.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Investment Advisory</h3>
+                    <p>Get expert advice on real estate investments to maximize your returns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Makani helped me find my dream home in just two weeks. Their team was professional and understood exactly what I was looking for."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The property management services provided by Makani are exceptional. They take care of everything, giving me peace of mind."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Michael Brown">
+                        <div>
+                            <h4>Michael Brown</h4>
+                            <p>Property Investor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Find Your Dream Home?</h2>
+                <p>Contact us today and let our experts help you find the perfect property.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Makani</h2>
+                    <p>Your trusted partner in real estate.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Real Estate Ave, Dubai, UAE</p>
+                    <p><i class="fas fa-phone"></i> +971 4 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@makani.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Makani Real Estate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
