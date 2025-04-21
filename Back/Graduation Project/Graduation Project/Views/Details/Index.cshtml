@@ -1,0 +1,154 @@
+﻿@model Graduation_Project.Models.HouseDetailsViewModel
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Http.Extensions
+@using Microsoft.AspNetCore.Http.Features
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/Details.cshtml";
+}
+
+<div class="property-details-container">
+    <div class="container">
+        <div class="property-gallery">
+            <div class="main-image">
+                <img src="@Model.Pictures.FirstOrDefault(p => !p.Is360)?.Url" alt="" id="mainPropertyImage" />
+                <button class="gallery-nav prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="gallery-nav next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="thumbnail-gallery">
+                @foreach (var picture in Model.Pictures.Where(p => !p.Is360))
+                {
+                    <img src="@picture.Url" alt="Property View" onclick="changeMainImage(this.src)" />
+                }
+            </div>
+        </div>
+
+        <div class="property-info">
+            <h1 class="property-title">@Model.House.Titel</h1>
+            <p class="property-price">$@Model.House.Price</p>
+            <p class="property-location"><i class="fa-solid fa-location-dot"></i> @Model.House.Location</p>
+
+            <h3>Description</h3>
+            <p class="property-title">@Model.House.Description</p>
+
+            @if (Model.Pictures.Any(p => p.Is360))
+            {
+                <h2>360° View</h2>
+                <div id="panorama" style="width: 100%; height: 400px;"></div>
+            }
+
+            <br />
+            <br />
+            @if (Context.Session.GetInt32("UserId") != null)
+            {
+                @if (!(Context.Session.GetInt32("UserId")==Model.House.Owner.UserId))
+                {
+                    string message="";
+                    <div class="inquiry-form">
+                        <h2>Contact Us To Buy</h2>
+                        @if (TempData["OrderMessage"] != null)
+                        {
+                             message = TempData["OrderMessage"].ToString();
+                        }
+                        @if (message == "Your order has been placed successfully. We will contact you soon!")
+                        {
+                            <div class="alert alert-success" role="alert">
+                                Your order has been placed successfully. We will contact you soon!
+                            </div>
+                        }
+                        else if (message == "You already have a scheduled order for this property. We will contact you soon!")
+                        {
+                            <div class="alert alert-warning" role="alert">
+                                You already have a scheduled order for this property. We will contact you soon!
+                            </div>
+                        }
+                        <form asp-action="Index" asp-controller="Orders" method="post">
+                            <div class="form-group">
+                                <input type="hidden" name="id" value="@Model.House.HouseId" />
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button style="color:white;" type="submit" class="submit-btn">Place Order</button>
+                        </form>
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-danger" role="alert">
+                        You Can't Buy Your Own House
+                    </div>
+                }
+
+                
+            }
+            else
+            {
+                <br />
+                <br />
+                <div >
+                    <a asp-action="Index" asp-controller="Auth" style="color: #fff;"><button>Please Login To Buy</button></a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const thumbnails = Array.from(document.querySelectorAll(".thumbnail-gallery img"));
+            const mainImage = document.getElementById("mainPropertyImage");
+            let currentIndex = 0;
+
+            function updateMainImage(index) {
+                currentIndex = index;
+                mainImage.src = thumbnails[currentIndex].src;
+                thumbnails.forEach(thumb => thumb.classList.remove("active"));
+                thumbnails[currentIndex].classList.add("active");
+            }
+
+            thumbnails.forEach((thumb, index) => {
+                thumb.addEventListener("click", () => updateMainImage(index));
+            });
+
+            document.querySelector(".gallery-nav.prev").addEventListener("click", () => {
+                const newIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
+                updateMainImage(newIndex);
+            });
+
+            document.querySelector(".gallery-nav.next").addEventListener("click", () => {
+                const newIndex = (currentIndex + 1) % thumbnails.length;
+                updateMainImage(newIndex);
+            });
+
+            if (thumbnails.length > 0) updateMainImage(0);
+
+            // Initialize Pannellum viewer for 360° image
+            const panoImageUrl = "@Model.Pictures.FirstOrDefault(p => p.Is360)?.Url";
+            if (panoImageUrl) {
+                pannellum.viewer('panorama', {
+                    type: 'equirectangular',
+                    panorama: panoImageUrl,
+                    autoLoad: true,
+                    showZoomCtrl: true,
+                    compass: false,
+                    pitch: 0,
+                    yaw: 0,
+                    hfov: 100
+                });
+            }
+        });
+    </script>
+}

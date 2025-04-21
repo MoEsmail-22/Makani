@@ -1,0 +1,71 @@
+﻿@model List<Graduation_Project.Models.HouseWithPictureViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/Listing.cshtml";
+}
+<div id="house-list" class="grid">
+    @foreach (var item in Model)
+    {
+        <div class="box">
+            <img width="450" height="250" src="@item.Picture?.Url" alt="">
+            <div class="text">
+                <p class="price">@item.House.Price $</p>
+                <p class="titel">@item.House.Titel</p>
+                <p class="location">
+                    <i class="fa-solid fa-location-dot"></i> @item.House.Location
+                </p>
+                <ul class="flex">
+                    <li>
+                        <form asp-action="Index" asp-controller="Details" method="get">
+                            <input type="hidden" name="id" value="@item.House.HouseId" />
+                            <button type="submit">Show More</button>
+                        </form>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            var itemsPerPage = 12;
+            var $boxes = $('#house-list .box');
+            var totalItems = $boxes.length;
+            var totalPages = Math.ceil(totalItems / itemsPerPage);
+
+            function showPage(page) {
+                $boxes.hide();
+                var start = (page - 1) * itemsPerPage;
+                var end = start + itemsPerPage;
+                $boxes.slice(start, end).fadeIn();
+            }
+
+            function createPagination() {
+                var $pagination = $('#pagination');
+                $pagination.empty();
+
+                for (var i = 1; i <= totalPages; i++) {
+                    $pagination.append('<a href="#" class="page-link" data-page="' + i + '">' + i + '</a>');
+                }
+
+                $pagination.on('click', '.page-link', function (e) {
+                    e.preventDefault();
+                    var page = $(this).data('page');
+                    showPage(page);
+                    $('.page-link').removeClass('active');
+                    $(this).addClass('active');
+                });
+
+                $pagination.find('.page-link').first().addClass('active');
+            }
+
+            showPage(1);
+            createPagination();
+        });
+    </script>
+}

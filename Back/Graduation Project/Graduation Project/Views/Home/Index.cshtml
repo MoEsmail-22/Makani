@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Graduation_Project.Models.HouseWithPictureViewModel>
+@{
+    Layout = "Home";
+}
+@foreach (var item in Model)
+{
+    <div class="box">
+        <img width="450" height="250" src="@item.Picture?.Url" alt="">
+        <div class="text">
+            <p class="price">@item.House.Price $</p>
+            <p class="titel">@item.House.Titel</p>
+            <p class="location">
+                <i class="fa-solid fa-location-dot"></i> @item.House.Location
+            </p>
+            <ul class="flex">
+                <li>
+                    <form asp-action="Index" asp-controller="Details" method="get">
+                        <input type="hidden" name="id" value="@item.House.HouseId" />
+                        <button type="submit">Show More</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+}

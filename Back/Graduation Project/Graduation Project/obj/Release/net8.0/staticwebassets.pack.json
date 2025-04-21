@@ -1,0 +1,597 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\Graduation Project.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Graduation Project.hi2qgzlr1m.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\css\\about.css",
+      "PackagePath": "staticwebassets\\css\\about.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\css\\addToList.css",
+      "PackagePath": "staticwebassets\\css\\addToList.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\css\\contact.css",
+      "PackagePath": "staticwebassets\\css\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\css\\findProperty.css",
+      "PackagePath": "staticwebassets\\css\\findProperty.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\css\\mainStyle.css",
+      "PackagePath": "staticwebassets\\css\\mainStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\css\\normalize.css",
+      "PackagePath": "staticwebassets\\css\\normalize.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\css\\propertyDetails.css",
+      "PackagePath": "staticwebassets\\css\\propertyDetails.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\css\\signIn.css",
+      "PackagePath": "staticwebassets\\css\\signIn.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\css\\signUp.css",
+      "PackagePath": "staticwebassets\\css\\signUp.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\Makani-home.html",
+      "PackagePath": "staticwebassets\\images\\Makani-home.html"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\Makani-home_files\\about.jpg",
+      "PackagePath": "staticwebassets\\images\\Makani-home_files\\about.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\Makani-home_files\\all.min.css",
+      "PackagePath": "staticwebassets\\images\\Makani-home_files\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\Makani-home_files\\css2",
+      "PackagePath": "staticwebassets\\images\\Makani-home_files"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\Makani-home_files\\logo.png",
+      "PackagePath": "staticwebassets\\images\\Makani-home_files\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\Makani-home_files\\main.js",
+      "PackagePath": "staticwebassets\\images\\Makani-home_files\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\Makani-home_files\\mainStyle.css",
+      "PackagePath": "staticwebassets\\images\\Makani-home_files\\mainStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\Makani-home_files\\normalize.css",
+      "PackagePath": "staticwebassets\\images\\Makani-home_files\\normalize.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\Makani-home_files\\property-1.jpg",
+      "PackagePath": "staticwebassets\\images\\Makani-home_files\\property-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\Makani-home_files\\property-2.jpg",
+      "PackagePath": "staticwebassets\\images\\Makani-home_files\\property-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\Makani-home_files\\property-3.jpg",
+      "PackagePath": "staticwebassets\\images\\Makani-home_files\\property-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\Makani-home_files\\property-4.jpg",
+      "PackagePath": "staticwebassets\\images\\Makani-home_files\\property-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\Makani-home_files\\property-5.jpg",
+      "PackagePath": "staticwebassets\\images\\Makani-home_files\\property-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\Makani-home_files\\property-6.jpg",
+      "PackagePath": "staticwebassets\\images\\Makani-home_files\\property-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\about.jpg",
+      "PackagePath": "staticwebassets\\images\\about.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\call-to-action.jpg",
+      "PackagePath": "staticwebassets\\images\\call-to-action.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\carousel-1.jpg",
+      "PackagePath": "staticwebassets\\images\\carousel-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\carousel-2.jpg",
+      "PackagePath": "staticwebassets\\images\\carousel-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\check-solid (1).svg",
+      "PackagePath": "staticwebassets\\images\\check-solid (1).svg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\check-solid.svg",
+      "PackagePath": "staticwebassets\\images\\check-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\find you a seller.png",
+      "PackagePath": "staticwebassets\\images\\find you a seller.png"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\fotter logo.png",
+      "PackagePath": "staticwebassets\\images\\fotter logo.png"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\header.jpg",
+      "PackagePath": "staticwebassets\\images\\header.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\icon-apartment.png",
+      "PackagePath": "staticwebassets\\images\\icon-apartment.png"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\icon-building.png",
+      "PackagePath": "staticwebassets\\images\\icon-building.png"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\icon-condominium.png",
+      "PackagePath": "staticwebassets\\images\\icon-condominium.png"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\icon-deal.png",
+      "PackagePath": "staticwebassets\\images\\icon-deal.png"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\icon-house.png",
+      "PackagePath": "staticwebassets\\images\\icon-house.png"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\icon-housing.png",
+      "PackagePath": "staticwebassets\\images\\icon-housing.png"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\icon-luxury.png",
+      "PackagePath": "staticwebassets\\images\\icon-luxury.png"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\icon-neighborhood.png",
+      "PackagePath": "staticwebassets\\images\\icon-neighborhood.png"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\icon-search.png",
+      "PackagePath": "staticwebassets\\images\\icon-search.png"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\icon-villa.png",
+      "PackagePath": "staticwebassets\\images\\icon-villa.png"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\landing background.png",
+      "PackagePath": "staticwebassets\\images\\landing background.png"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\phone-landing.jpg",
+      "PackagePath": "staticwebassets\\images\\phone-landing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\property-1.jpg",
+      "PackagePath": "staticwebassets\\images\\property-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\property-2.jpg",
+      "PackagePath": "staticwebassets\\images\\property-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\property-3.jpg",
+      "PackagePath": "staticwebassets\\images\\property-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\property-4.jpg",
+      "PackagePath": "staticwebassets\\images\\property-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\property-5.jpg",
+      "PackagePath": "staticwebassets\\images\\property-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\property-6.jpg",
+      "PackagePath": "staticwebassets\\images\\property-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\team-2.jpg",
+      "PackagePath": "staticwebassets\\images\\team-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\team-4.jpg",
+      "PackagePath": "staticwebassets\\images\\team-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\testimonial-2.jpg",
+      "PackagePath": "staticwebassets\\images\\testimonial-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\images\\testimonial-3.jpg",
+      "PackagePath": "staticwebassets\\images\\testimonial-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\js\\addToList.js",
+      "PackagePath": "staticwebassets\\js\\addToList.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\js\\propertyRedirect.js",
+      "PackagePath": "staticwebassets\\js\\propertyRedirect.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\js\\signin.js",
+      "PackagePath": "staticwebassets\\js\\signin.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\js\\signup.js",
+      "PackagePath": "staticwebassets\\js\\signup.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.Graduation Project.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.Graduation Project.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.Graduation Project.props",
+      "PackagePath": "build\\Graduation Project.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Graduation Project.props",
+      "PackagePath": "buildMultiTargeting\\Graduation Project.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.Graduation Project.props",
+      "PackagePath": "buildTransitive\\Graduation Project.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

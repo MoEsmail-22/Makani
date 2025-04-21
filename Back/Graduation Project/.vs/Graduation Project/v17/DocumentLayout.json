@@ -1,0 +1,63 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{594FE379-0E69-464B-A956-89F5E3368B36}|Graduation Project\\Graduation Project.csproj|c:\\users\\esmai\\source\\repos\\graduation project\\graduation project\\views\\details\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{594FE379-0E69-464B-A956-89F5E3368B36}|Graduation Project\\Graduation Project.csproj|solutionrelative:graduation project\\views\\details\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 288,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\Views\\Details\\Index.cshtml",
+              "RelativeDocumentMoniker": "Graduation Project\\Views\\Details\\Index.cshtml",
+              "ToolTip": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\Views\\Details\\Index.cshtml",
+              "RelativeToolTip": "Graduation Project\\Views\\Details\\Index.cshtml",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAuwE4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-21T19:38:21.952Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 98,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "Auth";
+    Layout = "~/Views/Shared/Auth.cshtml";
+}
+<form asp-action="Index" asp-controller="Auth" method="post" >
+    <label  for="email">Email Addres</label>
+    <input  type="email" required name="email" id="email" placeholder='email@makani.com'>
+    <label for="password">Password</label>
+    <input type="password" required name="password" placeholder='password' id="password">
+    <div class="forgot"><a href="#">forget password?</a></div>
+    <button class="sighIN"><a href="index.html"></a>sign in</button>
+</form>
+<div class="signUp">
+    <p>Don't have an account? <a asp-action="Register" asp-controller="Auth">Sign Up</a></p>
+</div>
