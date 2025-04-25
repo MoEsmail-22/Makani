@@ -363,7 +363,6 @@ C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\ne
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\Microsoft.Win32.SystemEvents.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\Mono.TextTemplating.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\Newtonsoft.Json.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\NuGet.Common.dll
@@ -375,6 +374,7 @@ C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\ne
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\NuGet.ProjectModel.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\NuGet.Protocol.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\NuGet.Versioning.dll
+C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\Stripe.net.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\System.ClientModel.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\System.CodeDom.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\System.Composition.AttributedModel.dll
@@ -383,14 +383,11 @@ C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\ne
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\System.Composition.Runtime.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\System.Composition.TypedParts.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\System.Configuration.ConfigurationManager.dll
-C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\System.Drawing.Common.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\System.Memory.Data.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\System.Reflection.MetadataLoadContext.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\System.Runtime.Caching.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\System.Security.Cryptography.ProtectedData.dll
-C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\System.Security.Permissions.dll
-C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\System.Windows.Extensions.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\af\Humanizer.resources.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\ar\Humanizer.resources.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\az\Humanizer.resources.dll
@@ -536,9 +533,5 @@ C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\ne
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\esmai\source\repos\Graduation Project\Graduation Project\obj\Release\net8.0\PubTmp\Out\Graduation Project.deps.json

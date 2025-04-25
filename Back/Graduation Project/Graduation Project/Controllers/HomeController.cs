@@ -21,15 +21,18 @@ namespace Graduation_Project.Controllers
         // GET: Home
         public async Task<IActionResult> Index()
         {
+            var employee = await _context.Employees.Where(e => e.UserId == HttpContext.Session.GetInt32("UserId")).FirstOrDefaultAsync();
             var houses = await _context.Houses
                 .Include(h => h.Pictures)
                 .Select(h => new HouseWithPictureViewModel
                 {
                     House = h,
-                    Picture = h.Pictures.FirstOrDefault()
-                })
+                    Picture = h.Pictures.FirstOrDefault(),
+                    Employee = employee
+                }).Where(h=> h.House.IsApproved == true)
                 .Take(3)
                 .ToListAsync();
+                
 
             return View(houses);
         }

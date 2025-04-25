@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "b9cu0RWb4+WLox5fLfaSbW9ncdn8r4GZTZTe7FMEX3I=",
+  "Hash": "fYlI7zBobP8ieRvX9t+MYpCoO/wsSjYMBxnMbxsYtHg=",
   "Source": "Graduation Project",
   "BasePath": "_content/Graduation Project",
   "Mode": "Default",
@@ -288,6 +288,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\css\\validation.css",
+      "SourceId": "Graduation Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\",
+      "BasePath": "_content/Graduation Project",
+      "RelativePath": "css/validation#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qati1svhbi",
+      "Integrity": "0iXJkVMdeoRjRAz9ERGpB3eNsH0p4ZKEPSNU6kYsBGY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\validation.css"
     },
     {
       "Identity": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\favicon.ico",
@@ -1354,8 +1375,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "el7st92yfj",
-      "Integrity": "jkmX/LgczbjQhoVfJFIucvOI8Nz39pCBUSMwpj0Q58M=",
+      "Fingerprint": "ke4eolek51",
+      "Integrity": "NIYWPzTq01SSY3WZop7rBqIU8n3saLRWUNYyQhHqPA0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\signin.js"
@@ -1401,6 +1422,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\js\\validation.js",
+      "SourceId": "Graduation Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\",
+      "BasePath": "_content/Graduation Project",
+      "RelativePath": "js/validation#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7pr13jmhyf",
+      "Integrity": "e/EjZ1m9JhgOe9YvGBkqjoVvIGqhk6dS0aa4cvAJb1k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\validation.js"
     },
     {
       "Identity": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -3941,6 +3983,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+        }
+      ]
+    },
+    {
+      "Route": "css/validation.css",
+      "AssetFile": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\css\\validation.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "562"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0iXJkVMdeoRjRAz9ERGpB3eNsH0p4ZKEPSNU6kYsBGY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 11:30:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0iXJkVMdeoRjRAz9ERGpB3eNsH0p4ZKEPSNU6kYsBGY="
+        }
+      ]
+    },
+    {
+      "Route": "css/validation.qati1svhbi.css",
+      "AssetFile": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\css\\validation.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "562"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0iXJkVMdeoRjRAz9ERGpB3eNsH0p4ZKEPSNU6kYsBGY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 11:30:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qati1svhbi"
+        },
+        {
+          "Name": "label",
+          "Value": "css/validation.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0iXJkVMdeoRjRAz9ERGpB3eNsH0p4ZKEPSNU6kYsBGY="
         }
       ]
     },
@@ -8209,51 +8333,6 @@
       ]
     },
     {
-      "Route": "js/signin.el7st92yfj.js",
-      "AssetFile": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\js\\signin.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "270"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"jkmX/LgczbjQhoVfJFIucvOI8Nz39pCBUSMwpj0Q58M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 19:15:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "el7st92yfj"
-        },
-        {
-          "Name": "label",
-          "Value": "js/signin.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-jkmX/LgczbjQhoVfJFIucvOI8Nz39pCBUSMwpj0Q58M="
-        }
-      ]
-    },
-    {
       "Route": "js/signin.js",
       "AssetFile": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\js\\signin.js",
       "Selectors": [],
@@ -8264,7 +8343,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "270"
+          "Value": "184"
         },
         {
           "Name": "Content-Type",
@@ -8272,11 +8351,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jkmX/LgczbjQhoVfJFIucvOI8Nz39pCBUSMwpj0Q58M=\""
+          "Value": "\"NIYWPzTq01SSY3WZop7rBqIU8n3saLRWUNYyQhHqPA0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 19:15:47 GMT"
+          "Value": "Thu, 24 Apr 2025 12:46:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8286,7 +8365,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-jkmX/LgczbjQhoVfJFIucvOI8Nz39pCBUSMwpj0Q58M="
+          "Value": "sha256-NIYWPzTq01SSY3WZop7rBqIU8n3saLRWUNYyQhHqPA0="
+        }
+      ]
+    },
+    {
+      "Route": "js/signin.ke4eolek51.js",
+      "AssetFile": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\js\\signin.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NIYWPzTq01SSY3WZop7rBqIU8n3saLRWUNYyQhHqPA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 12:46:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ke4eolek51"
+        },
+        {
+          "Name": "label",
+          "Value": "js/signin.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NIYWPzTq01SSY3WZop7rBqIU8n3saLRWUNYyQhHqPA0="
         }
       ]
     },
@@ -8451,6 +8575,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+        }
+      ]
+    },
+    {
+      "Route": "js/validation.7pr13jmhyf.js",
+      "AssetFile": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\js\\validation.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e/EjZ1m9JhgOe9YvGBkqjoVvIGqhk6dS0aa4cvAJb1k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 12:15:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7pr13jmhyf"
+        },
+        {
+          "Name": "label",
+          "Value": "js/validation.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-e/EjZ1m9JhgOe9YvGBkqjoVvIGqhk6dS0aa4cvAJb1k="
+        }
+      ]
+    },
+    {
+      "Route": "js/validation.js",
+      "AssetFile": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\js\\validation.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e/EjZ1m9JhgOe9YvGBkqjoVvIGqhk6dS0aa4cvAJb1k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 12:15:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e/EjZ1m9JhgOe9YvGBkqjoVvIGqhk6dS0aa4cvAJb1k="
         }
       ]
     },

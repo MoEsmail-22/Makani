@@ -1,5 +1,6 @@
 ﻿using Graduation_Project.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Graduation_Project.Controllers
 {
@@ -15,7 +16,7 @@ namespace Graduation_Project.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(int id, string message)
+        public IActionResult Index(int id, string message , string Date)
         {
             var userId = HttpContext.Session.GetInt32("UserId");
             if (userId == null)
@@ -36,7 +37,8 @@ namespace Graduation_Project.Controllers
                 {
                     UserId = userId.Value,
                     HouseId = id,
-                    Message = message
+                    Message = message,
+                    Date = Date
                 };
 
                 _context.Orders.Add(order);
@@ -48,5 +50,42 @@ namespace Graduation_Project.Controllers
             return RedirectToAction("Index", "Details", new { id = id });
         }
 
+        [HttpPost]
+        public IActionResult MockPayment(int id)
+        {
+            var userId = HttpContext.Session.GetInt32("UserId");
+            var order = new Order
+            {
+                UserId = userId.Value,
+                HouseId = id,
+                Message = null,
+                Date = null
+
+            };
+
+            _context.Orders.Add(order);
+
+            
+            _context.SaveChanges();
+            // Simulate success
+            TempData["OrderMessage"] = "payment successful! We will contact you soon.";
+
+            var House = _context.Houses.SingleOrDefault(e => e.HouseId == id);
+            House.IsApproved = false;
+            _context.SaveChanges();
+            // Optionally, save a fake order in the DB here
+
+            return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult OrdersList()
+        {
+            var orders = _context.Orders
+                .Include(o => o.House)
+                .Include(o => o.User)
+                .Where(o=> o.Date != null)
+                .ToList();
+            return View(orders);
+        }
     }
 }

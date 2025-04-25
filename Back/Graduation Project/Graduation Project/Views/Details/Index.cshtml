@@ -8,6 +8,23 @@
     Layout = "~/Views/Shared/Details.cshtml";
 }
 
+<style>
+    .error-message {
+        color: #dc3545;
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+        display: none;
+    }
+
+    .invalid-field {
+        border: 1px solid #dc3545 !important;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+</style>
+
 <div class="property-details-container">
     <div class="container">
         <div class="property-gallery">
@@ -47,14 +64,13 @@
             <br />
             @if (Context.Session.GetInt32("UserId") != null)
             {
-                @if (!(Context.Session.GetInt32("UserId")==Model.House.Owner.UserId))
+                @if (!(Context.Session.GetInt32("UserId") == Model.House.Owner.UserId))
                 {
-                    string message="";
+                    string message = "";
                     <div class="inquiry-form">
-                        <h2>Contact Us To Buy</h2>
                         @if (TempData["OrderMessage"] != null)
                         {
-                             message = TempData["OrderMessage"].ToString();
+                            message = TempData["OrderMessage"].ToString();
                         }
                         @if (message == "Your order has been placed successfully. We will contact you soon!")
                         {
@@ -68,32 +84,72 @@
                                 You already have a scheduled order for this property. We will contact you soon!
                             </div>
                         }
-                        <form asp-action="Index" asp-controller="Orders" method="post">
-                            <div class="form-group">
+                        <!-- Radio buttons -->
+                        <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
+                        <label class="btn" for="option5">Schedule a meeting</label>
+
+                        <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
+                        <label class="btn" for="option6">Pay Online</label>
+                        <br />
+                        <br />
+                        <!-- Schedule Meeting Form -->
+                        <div id="scheduleForm">
+                            <h2>Contact Us To Buy</h2>
+                            <form asp-action="Index" asp-controller="Orders" method="post" id="scheduleFormElement">
                                 <input type="hidden" name="id" value="@Model.House.HouseId" />
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button style="color:white;" type="submit" class="submit-btn">Place Order</button>
-                        </form>
+                                <div class="form-group">
+                                    <label for="Date">Meeting Date:</label>
+                                    <input type="date" id="Date" name="Date" required>
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                    <div id="message-error" class="error-message"></div>
+                                </div>
+                                <button type="submit" class="submit-btn" style="color:white;">Place Order</button>
+                            </form>
+                        </div>
+
+                        <!-- Stripe Payment Form -->
+                        <div id="paymentForm" style="display:none;">
+                            <h2>Payment Form</h2>
+                            <form asp-action="MockPayment" asp-controller="Orders" method="POST" id="paymentFormElement">
+                                <input type="hidden" name="id" value="@Model.House.HouseId" />
+                                <div class="form-group">
+                                    <label for="card-number">Card Number</label>
+                                    <input type="text" id="card-number" name="card-number" placeholder="1234-5678-9012-3456" required>
+                                    <div id="card-number-error" class="error-message"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="expiry-date">Expiry Date</label>
+                                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                                    <div id="expiry-date-error" class="error-message"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                                    <div id="cvv-error" class="error-message"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cardholder-name">Cardholder Name</label>
+                                    <input type="text" id="cardholder-name" name="cardholder-name" placeholder="John Doe" required>
+                                    <div id="cardholder-name-error" class="error-message"></div>
+                                </div>
+                                <button style="color:white;" type="submit" class="submit-btn">Submit Payment</button>
+                            </form>
+                        </div>
                     </div>
                 }
-                else
+                else if (Model.House.Owner.UserId == Context.Session.GetInt32("UserId"))
                 {
                     <div class="alert alert-danger" role="alert">
                         You Can't Buy Your Own House
                     </div>
                 }
-
-                
             }
             else
             {
                 <br />
                 <br />
-                <div >
+                <div>
                     <a asp-action="Index" asp-controller="Auth" style="color: #fff;"><button>Please Login To Buy</button></a>
                 </div>
             }
@@ -149,6 +205,167 @@
                     hfov: 100
                 });
             }
+
+            // Form validation functions
+            function validateScheduleForm(form) {
+                const message = form.querySelector('#message').value.trim();
+                const messageError = document.getElementById('message-error');
+                let isValid = true;
+
+                // Reset errors
+                messageError.style.display = 'none';
+                form.querySelector('#message').classList.remove('invalid-field');
+
+                // Message validation
+                if (message.length === 0) {
+                    messageError.textContent = 'Message is required.';
+                    messageError.style.display = 'block';
+                    form.querySelector('#message').classList.add('invalid-field');
+                    isValid = false;
+                } else if (message.length < 10) {
+                    messageError.textContent = 'Message must be at least 10 characters long.';
+                    messageError.style.display = 'block';
+                    form.querySelector('#message').classList.add('invalid-field');
+                    isValid = false;
+                } else if (message.length > 500) {
+                    messageError.textContent = 'Message cannot exceed 500 characters.';
+                    messageError.style.display = 'block';
+                    form.querySelector('#message').classList.add('invalid-field');
+                    isValid = false;
+                }
+
+                // Basic XSS prevention
+                const messageRegex = /[<>{}]/;
+                if (messageRegex.test(message)) {
+                    messageError.textContent = 'Message contains invalid characters.';
+                    messageError.style.display = 'block';
+                    form.querySelector('#message').classList.add('invalid-field');
+                    isValid = false;
+                }
+
+                return isValid;
+            }
+
+            function validatePaymentForm(form) {
+                const cardNumber = form.querySelector('#card-number').value.trim();
+                const expiryDate = form.querySelector('#expiry-date').value.trim();
+                const cvv = form.querySelector('#cvv').value.trim();
+                const cardholderName = form.querySelector('#cardholder-name').value.trim();
+
+                const cardNumberError = document.getElementById('card-number-error');
+                const expiryDateError = document.getElementById('expiry-date-error');
+                const cvvError = document.getElementById('cvv-error');
+                const cardholderNameError = document.getElementById('cardholder-name-error');
+
+                let isValid = true;
+
+                // Reset errors
+                [cardNumberError, expiryDateError, cvvError, cardholderNameError].forEach(error => {
+                    error.style.display = 'none';
+                });
+                ['#card-number', '#expiry-date', '#cvv', '#cardholder-name'].forEach(field => {
+                    form.querySelector(field).classList.remove('invalid-field');
+                });
+
+                // Card number validation
+                const cardNumberRegex = /^\d{4}-?\d{4}-?\d{4}-?\d{4}$/;
+                if (!cardNumberRegex.test(cardNumber)) {
+                    cardNumberError.textContent = 'Invalid card number format (use XXXX-XXXX-XXXX-XXXX).';
+                    cardNumberError.style.display = 'block';
+                    form.querySelector('#card-number').classList.add('invalid-field');
+                    isValid = false;
+                }
+
+                // Expiry date validation
+                const expiryRegex = /^(0[1-9]|1[0-2])\/[0-9]{2}$/;
+                if (!expiryRegex.test(expiryDate)) {
+                    expiryDateError.textContent = 'Invalid expiry date format (use MM/YY).';
+                    expiryDateError.style.display = 'block';
+                    form.querySelector('#expiry-date').classList.add('invalid-field');
+                    isValid = false;
+                } else {
+                    const [month, year] = expiryDate.split('/');
+                    const expiry = new Date(`20${year}`, month - 1);
+                    const now = new Date();
+                    if (expiry < now) {
+                        expiryDateError.textContent = 'Card has expired.';
+                        expiryDateError.style.display = 'block';
+                        form.querySelector('#expiry-date').classList.add('invalid-field');
+                        isValid = false;
+                    }
+                }
+
+                // CVV validation
+                const cvvRegex = /^\d{3,4}$/;
+                if (!cvvRegex.test(cvv)) {
+                    cvvError.textContent = 'Invalid CVV (must be 3 or 4 digits).';
+                    cvvError.style.display = 'block';
+                    form.querySelector('#cvv').classList.add('invalid-field');
+                    isValid = false;
+                }
+
+                // Cardholder name validation
+                const nameRegex = /^[a-zA-Z\s]{2,50}$/;
+                if (!nameRegex.test(cardholderName)) {
+                    cardholderNameError.textContent = 'Invalid cardholder name (2-50 characters, letters only).';
+                    cardholderNameError.style.display = 'block';
+                    form.querySelector('#cardholder-name').classList.add('invalid-field');
+                    isValid = false;
+                }
+
+                return isValid;
+            }
+
+            // Form submission handlers
+            const scheduleFormElement = document.getElementById('scheduleFormElement');
+            const paymentFormElement = document.getElementById('paymentFormElement');
+
+            scheduleFormElement.addEventListener('submit', function(e) {
+                if (!validateScheduleForm(this)) {
+                    e.preventDefault();
+                }
+            });
+
+            paymentFormElement.addEventListener('submit', function(e) {
+                if (!validatePaymentForm(this)) {
+                    e.preventDefault();
+                }
+            });
+
+            // Real-time validation
+            scheduleFormElement.querySelector('#message').addEventListener('input', function() {
+                validateScheduleForm(scheduleFormElement);
+            });
+
+            ['#card-number', '#expiry-date', '#cvv', '#cardholder-name'].forEach(field => {
+                paymentFormElement.querySelector(field).addEventListener('input', function() {
+                    validatePaymentForm(paymentFormElement);
+                });
+            });
+
+            // Radio button toggle
+            const scheduleRadio = document.getElementById("option5");
+            const payRadio = document.getElementById("option6");
+            const scheduleForm = document.getElementById("scheduleForm");
+            const paymentForm = document.getElementById("paymentForm");
+
+            function toggleForms() {
+                if (scheduleRadio.checked) {
+                    scheduleForm.style.display = "block";
+                    paymentForm.style.display = "none";
+                } else if (payRadio.checked) {
+                    scheduleForm.style.display = "none";
+                    paymentForm.style.display = "block";
+                }
+            }
+
+            scheduleRadio.addEventListener("change", toggleForms);
+            payRadio.addEventListener("change", toggleForms);
+            toggleForms();
         });
+
+        function changeMainImage(src) {
+            document.getElementById('mainPropertyImage').src = src;
+        }
     </script>
 }

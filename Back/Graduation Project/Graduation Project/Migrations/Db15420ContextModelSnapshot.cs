@@ -17,6 +17,7 @@ namespace Graduation_Project.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
+                .UseCollation("Arabic_CS_AI")
                 .HasAnnotation("ProductVersion", "8.0.15")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
@@ -50,7 +51,7 @@ namespace Graduation_Project.Migrations
 
                     b.HasKey("CustomerId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex(new[] { "UserId" }, "IX_Customers_UserID");
 
                     b.ToTable("Customers");
                 });
@@ -83,7 +84,7 @@ namespace Graduation_Project.Migrations
 
                     b.HasKey("EmployeeId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex(new[] { "UserId" }, "IX_Employees_UserID");
 
                     b.ToTable("Employees");
                 });
@@ -102,6 +103,11 @@ namespace Graduation_Project.Migrations
                         .HasMaxLength(500)
                         .IsUnicode(false)
                         .HasColumnType("varchar(500)");
+
+                    b.Property<bool>("IsApproved")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
 
                     b.Property<string>("Location")
                         .IsRequired()
@@ -124,17 +130,55 @@ namespace Graduation_Project.Migrations
 
                     b.Property<string>("Titel")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("nvarchar(max)")
+                        .HasDefaultValue("");
 
                     b.Property<string>("Type")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("nvarchar(max)")
+                        .HasDefaultValue("");
 
                     b.HasKey("HouseId");
 
-                    b.HasIndex("OwnerId");
+                    b.HasIndex(new[] { "OwnerId" }, "IX_Houses_OwnerID");
 
                     b.ToTable("Houses");
+                });
+
+            modelBuilder.Entity("Graduation_Project.Models.Order", b =>
+                {
+                    b.Property<int>("OrderId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("OrderID");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderId"));
+
+                    b.Property<string>("Date")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("HouseId")
+                        .HasColumnType("int")
+                        .HasColumnName("HouseID");
+
+                    b.Property<string>("Message")
+                        .HasMaxLength(500)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(500)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int")
+                        .HasColumnName("UserID");
+
+                    b.HasKey("OrderId");
+
+                    b.HasIndex("HouseId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("Graduation_Project.Models.Owner", b =>
@@ -165,7 +209,7 @@ namespace Graduation_Project.Migrations
 
                     b.HasKey("OwnerId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex(new[] { "UserId" }, "IX_Owners_UserID");
 
                     b.ToTable("Owners");
                 });
@@ -194,7 +238,7 @@ namespace Graduation_Project.Migrations
 
                     b.HasKey("PictureId");
 
-                    b.HasIndex("HousesId");
+                    b.HasIndex(new[] { "HousesId" }, "IX_Pictures_HousesID");
 
                     b.ToTable("Pictures");
                 });
@@ -227,9 +271,9 @@ namespace Graduation_Project.Migrations
 
                     b.HasKey("ReviewId");
 
-                    b.HasIndex("CustomerId");
+                    b.HasIndex(new[] { "CustomerId" }, "IX_Reviews_CustomerID");
 
-                    b.HasIndex("HouseId");
+                    b.HasIndex(new[] { "HouseId" }, "IX_Reviews_HouseID");
 
                     b.ToTable("Reviews");
                 });
@@ -267,11 +311,11 @@ namespace Graduation_Project.Migrations
 
                     b.HasKey("TransactionId");
 
-                    b.HasIndex("CustomerId");
+                    b.HasIndex(new[] { "CustomerId" }, "IX_Transactions_CustomerID");
 
-                    b.HasIndex("EmployeeId");
+                    b.HasIndex(new[] { "EmployeeId" }, "IX_Transactions_EmployeeID");
 
-                    b.HasIndex("HouseId");
+                    b.HasIndex(new[] { "HouseId" }, "IX_Transactions_HouseID");
 
                     b.ToTable("Transactions");
                 });
@@ -336,6 +380,25 @@ namespace Graduation_Project.Migrations
                         .HasConstraintName("FK_Owners_Houses");
 
                     b.Navigation("Owner");
+                });
+
+            modelBuilder.Entity("Graduation_Project.Models.Order", b =>
+                {
+                    b.HasOne("Graduation_Project.Models.House", "House")
+                        .WithMany("Orders")
+                        .HasForeignKey("HouseId")
+                        .IsRequired()
+                        .HasConstraintName("FK_Orders_Houses");
+
+                    b.HasOne("Graduation_Project.Models.User", "User")
+                        .WithMany("Orders")
+                        .HasForeignKey("UserId")
+                        .IsRequired()
+                        .HasConstraintName("FK_Orders_Users");
+
+                    b.Navigation("House");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Graduation_Project.Models.Owner", b =>
@@ -420,6 +483,8 @@ namespace Graduation_Project.Migrations
 
             modelBuilder.Entity("Graduation_Project.Models.House", b =>
                 {
+                    b.Navigation("Orders");
+
                     b.Navigation("Pictures");
 
                     b.Navigation("Reviews");
@@ -437,6 +502,8 @@ namespace Graduation_Project.Migrations
                     b.Navigation("Customers");
 
                     b.Navigation("Employees");
+
+                    b.Navigation("Orders");
 
                     b.Navigation("Owners");
                 });

@@ -12,6 +12,7 @@ public partial class Order
     public int HouseId { get; set; }
 
     public string? Message { get; set; }
+    public String? Date { get; set; }
 
     public virtual House House { get; set; } = null!;
 

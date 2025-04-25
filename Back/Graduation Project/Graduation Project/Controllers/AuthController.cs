@@ -64,9 +64,21 @@ namespace Graduation_Project.Controllers
                 return View();
             }
 
+            var employee = await _context.Employees
+                .FirstOrDefaultAsync(e => e.UserId == user.UserId);
             // Store user info in session
             HttpContext.Session.SetInt32("UserId", user.UserId);
             HttpContext.Session.SetString("UserEmail", user.Email);
+            if(employee!=null)
+            {
+                HttpContext.Session.SetInt32("Employee", employee.EmployeeId);
+            }
+            else
+            {
+                HttpContext.Session.SetInt32("Employee",0);
+            }
+                
+            
 
             return RedirectToAction("Index", "Home");
         }

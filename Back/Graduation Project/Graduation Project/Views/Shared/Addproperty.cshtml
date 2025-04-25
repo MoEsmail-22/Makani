@@ -23,6 +23,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/photo-sphere-viewer@4/dist/photo-sphere-viewer.css">
 
 </head>
 
@@ -61,6 +62,7 @@
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                             <a asp-action="Index" asp-controller="Listing">Find Property</a>
                             <a asp-action="Index" asp-controller="About">About</a>
+                            <a asp-action="Index" asp-controller="Contact">Contact</a>
                             <a class="add" asp-action="Index" asp-controller="AddProperty"><button>Add Property</button></a>
                         </div>
                         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -72,6 +74,10 @@
                     {
                         <div class="user">
                             <a asp-action="Logout" asp-controller="Auth" style="color: #fff;"><button>Log Out</button></a>
+                            @if (Context.Session.GetInt32("Employee") != null && Context.Session.GetInt32("Employee") != 0)
+                            {
+                                <a asp-action="OrdersList" asp-controller="Orders" style="color: #fff;"><button>Orders</button></a>
+                            }
                         </div>
                     }
                     else
@@ -133,6 +139,11 @@
                                     </a>
                                 </li>
                                 <li>
+                                    <a asp-action="Index" asp-controller="Contact">
+                                        <i class="fa-solid fa-angles-right"></i>Contact
+                                    </a>
+                                </li>
+                                <li>
                                     <a asp-action="Index" asp-controller="Listing">
                                         <i class="fa-solid fa-angles-right"></i>Properties
                                     </a>
@@ -183,6 +194,10 @@
     <!--  -->
     <script src="~/js/addToList.js"></script>
     <script src="~/js/main.js"></script>
+    <script src="~/js/validation.js"></script>
+
+    
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 

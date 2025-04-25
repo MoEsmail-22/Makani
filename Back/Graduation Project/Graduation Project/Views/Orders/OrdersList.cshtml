@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Graduation_Project.Models.Order>
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Http.Extensions
+@using Microsoft.AspNetCore.Http.Features
+@{
+    ViewData["Title"] = "Orders";
+    Layout = "~/Views/Shared/OrdersLayout.cshtml";
+}
+@if (Context.Session.GetInt32("Employee") != null)
+{
+<table class="table" id="myTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Message)
+            </th>
+            <th>
+                Metting Date
+            </th>
+            <th>
+                House ID
+            </th>
+            <th>
+                User ID
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.House.HouseId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.UserId)
+            </td>
+            <td>
+                    <a href="mailto:(@item.User.Email)" style="color: #fff;"><button>Contact With The Customer</button></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+}

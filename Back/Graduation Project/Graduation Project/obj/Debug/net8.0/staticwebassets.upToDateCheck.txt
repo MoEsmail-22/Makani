@@ -9,6 +9,7 @@ wwwroot\css\propertyDetails.css
 wwwroot\css\signIn.css
 wwwroot\css\signUp.css
 wwwroot\css\site.css
+wwwroot\css\validation.css
 wwwroot\favicon.ico
 wwwroot\images\about.jpg
 wwwroot\images\call-to-action.jpg
@@ -62,6 +63,7 @@ wwwroot\js\propertyRedirect.js
 wwwroot\js\signin.js
 wwwroot\js\signup.js
 wwwroot\js\site.js
+wwwroot\js\validation.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
