@@ -35,6 +35,7 @@ namespace Graduation_Project
             {
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
+                options.IdleTimeout = TimeSpan.FromMinutes(100);
             });
 
 

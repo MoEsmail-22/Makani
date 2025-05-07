@@ -249,6 +249,10 @@
       "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
+      "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\js\\otpverification.js",
+      "PackagePath": "staticwebassets\\js\\otpverification.js"
+    },
+    {
       "Id": "C:\\Users\\esmai\\source\\repos\\Graduation Project\\Graduation Project\\wwwroot\\js\\propertyRedirect.js",
       "PackagePath": "staticwebassets\\js\\propertyRedirect.js"
     },

@@ -59,6 +59,7 @@ wwwroot\images\testimonial-2.jpg
 wwwroot\images\testimonial-3.jpg
 wwwroot\js\addToList.js
 wwwroot\js\main.js
+wwwroot\js\otpverification.js
 wwwroot\js\propertyRedirect.js
 wwwroot\js\signin.js
 wwwroot\js\signup.js

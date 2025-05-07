@@ -2,7 +2,7 @@
 @using Microsoft.AspNetCore.Http
 @using Microsoft.AspNetCore.Http.Extensions
 @using Microsoft.AspNetCore.Http.Features
-
+@Html.AntiForgeryToken()
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/Details.cshtml";
@@ -108,11 +108,12 @@
                             </form>
                         </div>
 
-                        <!-- Stripe Payment Form -->
                         <div id="paymentForm" style="display:none;">
                             <h2>Payment Form</h2>
                             <form asp-action="MockPayment" asp-controller="Orders" method="POST" id="paymentFormElement">
                                 <input type="hidden" name="id" value="@Model.House.HouseId" />
+                                @*Email for otp*@
+                                <input type="hidden" name="Email" value="@ViewData["Email"]"/>
                                 <div class="form-group">
                                     <label for="card-number">Card Number</label>
                                     <input type="text" id="card-number" name="card-number" placeholder="1234-5678-9012-3456" required>
@@ -133,6 +134,18 @@
                                     <input type="text" id="cardholder-name" name="cardholder-name" placeholder="John Doe" required>
                                     <div id="cardholder-name-error" class="error-message"></div>
                                 </div>
+                                
+                                    <input type="hidden" name="HouseId" value="@Model.House.HouseId" />
+
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-secondary" onclick="sendOtp()">Send OTP</button>
+                                        <span id="otp-status" class="text-success"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Enter OTP</label>
+                                        <input type="text" name="Otp" class="form-control" required />
+                                    </div>
                                 <button style="color:white;" type="submit" class="submit-btn">Submit Payment</button>
                             </form>
                         </div>
@@ -163,6 +176,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
 
     <script>
+        function sendOtp() {
+            $.ajax({
+                url: '@Url.Action("SendOtp", "Orders")',
+                type: 'POST',
+                success: function(response) {
+                    var status = $('#otp-status');
+                    if (response.success) {
+                        status.text(response.message);
+                        status.removeClass('text-danger').addClass('text-success');
+                    } else {
+                        status.text(response.message);
+                        status.removeClass('text-success').addClass('text-danger');
+                    }
+                },
+                error: function() {
+                    var status = $('#otp-status');
+                    status.text('Error sending OTP.');
+                    status.removeClass('text-success').addClass('text-danger');
+                }
+            });
+        }
+
         document.addEventListener("DOMContentLoaded", function () {
             const thumbnails = Array.from(document.querySelectorAll(".thumbnail-gallery img"));
             const mainImage = document.getElementById("mainPropertyImage");
@@ -368,4 +403,5 @@
             document.getElementById('mainPropertyImage').src = src;
         }
     </script>
+}
 }

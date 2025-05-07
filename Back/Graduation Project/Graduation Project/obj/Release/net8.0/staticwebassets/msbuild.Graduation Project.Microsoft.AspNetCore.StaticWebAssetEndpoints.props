@@ -744,6 +744,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vgj90mk19v"},{"Name":"integrity","Value":"sha256-MZ1eY6N120j\u002BNfPZlsAxiVub6djjPsPGekR\u002Bdv53Yp8="},{"Name":"label","Value":"_content/Graduation Project/js/main.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"864"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022MZ1eY6N120j\u002BNfPZlsAxiVub6djjPsPGekR\u002Bdv53Yp8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 19 Apr 2025 19:15:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Graduation Project/js/otpverification.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\otpverification.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eAaIAOk/dqSJbSiJmHaIJPOs/78wY43930Ei4\u002BgONC0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2997"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022eAaIAOk/dqSJbSiJmHaIJPOs/78wY43930Ei4\u002BgONC0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 06 May 2025 19:26:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Graduation Project/js/otpverification.kdujtbxed2.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\otpverification.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kdujtbxed2"},{"Name":"integrity","Value":"sha256-eAaIAOk/dqSJbSiJmHaIJPOs/78wY43930Ei4\u002BgONC0="},{"Name":"label","Value":"_content/Graduation Project/js/otpverification.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2997"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022eAaIAOk/dqSJbSiJmHaIJPOs/78wY43930Ei4\u002BgONC0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 06 May 2025 19:26:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Graduation Project/js/propertyRedirect.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\propertyRedirect.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -768,17 +780,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ke4eolek51"},{"Name":"integrity","Value":"sha256-NIYWPzTq01SSY3WZop7rBqIU8n3saLRWUNYyQhHqPA0="},{"Name":"label","Value":"_content/Graduation Project/js/signin.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"184"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022NIYWPzTq01SSY3WZop7rBqIU8n3saLRWUNYyQhHqPA0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 12:46:45 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Graduation Project/js/signup.9brx2wtvq1.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\signup.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9brx2wtvq1"},{"Name":"integrity","Value":"sha256-e6VjLq97K\u002BrZYTpo7BnechTDct7pL98YoOrDNKClXf8="},{"Name":"label","Value":"_content/Graduation Project/js/signup.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1105"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022e6VjLq97K\u002BrZYTpo7BnechTDct7pL98YoOrDNKClXf8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 19 Apr 2025 19:15:47 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Graduation Project/js/signup.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\signup.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-e6VjLq97K\u002BrZYTpo7BnechTDct7pL98YoOrDNKClXf8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1105"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022e6VjLq97K\u002BrZYTpo7BnechTDct7pL98YoOrDNKClXf8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 19 Apr 2025 19:15:47 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-33x936ZLGr0vGQB\u002BfOT5E/HJWW8dEOUN7dzesx4OwP8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1179"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002233x936ZLGr0vGQB\u002BfOT5E/HJWW8dEOUN7dzesx4OwP8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 06 May 2025 19:30:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Graduation Project/js/signup.vsd0b79x79.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\signup.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vsd0b79x79"},{"Name":"integrity","Value":"sha256-33x936ZLGr0vGQB\u002BfOT5E/HJWW8dEOUN7dzesx4OwP8="},{"Name":"label","Value":"_content/Graduation Project/js/signup.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1179"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002233x936ZLGr0vGQB\u002BfOT5E/HJWW8dEOUN7dzesx4OwP8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 06 May 2025 19:30:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Graduation Project/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

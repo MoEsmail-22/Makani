@@ -18,7 +18,8 @@ document.querySelector("form").addEventListener("submit", function (e) {
 
 document.querySelectorAll(".toggle-password").forEach((icon) => {
   icon.addEventListener("click", function () {
-    const input = this.previousElementSibling;
+    // Find the input within the same parent div
+    const input = this.closest(".input-group").querySelector("input");
     const isPassword = input.type === "password";
 
     // Toggle input type

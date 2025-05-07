@@ -17,6 +17,17 @@ namespace Graduation_Project.Controllers
 
         public IActionResult Index(int id)
         {
+            var userId = HttpContext.Session.GetInt32("UserId");
+            if (userId != null)
+            {
+                var user = _context.Users.Find(userId);
+                if (user != null)
+                {
+                    ViewData["UserName"] = user.Name;
+                    ViewData["UserId"] = user.UserId;
+                    ViewData["Email"] = user.Email;
+                }
+            }
             var house = _context.Houses
                 .Include(h => h.Pictures)
                 .Include(h => h.Owner) // Include the Owner navigation property
