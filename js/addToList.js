@@ -1,4 +1,3 @@
-'use stirct';
 
 function openNav() {
   document.getElementById('mySidenav').style.width = '250px';
@@ -30,7 +29,7 @@ close.forEach(btn => {
   btn.addEventListener('click', function (e) {
     e.preventDefault();
     modle.classList.add('none');
-  document.querySelector('.blure').style.filter = 'blur(0)';
+    document.querySelector('.blure').style.filter = 'blur(0)';
   });
 });
 
@@ -47,5 +46,5 @@ ok.addEventListener('click', function (e) {
 done.addEventListener('click', function (e) {
   e.preventDefault();
   modle.classList.add('none');
-    document.querySelector('.blure').style.filter = 'blur(0)';
+  document.querySelector('.blure').style.filter = 'blur(0)';
 });

@@ -1,5 +1,3 @@
-"use strict";
-
 const slideRight = document.querySelector(".toRight");
 const slideLeft = document.querySelector(".toLeft");
 const slides = document.querySelectorAll(".slide");
@@ -31,3 +29,13 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+/* To top button */
+const toTop = document.querySelector(".toTop");
+
+this.addEventListener("scroll", _ => {
+  if (scrollY >= 100)
+    toTop.classList.add("active");
+  else
+    toTop.classList.remove("active");
+})
