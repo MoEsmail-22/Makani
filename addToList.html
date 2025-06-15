@@ -59,9 +59,7 @@
                     <div class="sliderNav">
                         <div id="mySidenav" class="sidenav">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                            <a href="index.html">Home</a>
-                            <a href="findProperty.html">find property</a>
-                            <a href="about.html#testmonials">Testmonials</a>
+                            <a href="findProperty.html">Find Property</a>
                             <a href="about.html">About</a>
                             <a href="contact.html">Contact</a>
                         </div>
@@ -84,121 +82,122 @@
                 </div>
             </div>
         </div>
-            <div class="scroll">
-        <a href="#" class="toTop"><i class="fa-solid fa-arrow-right"></i></a>
-        <div class="list blure">
-            <div class="container">
-                <h3>list your property</h3>
-                <form action="newListing">
-                    <label for="title">property titel</label>
-                    <input type="text" id="title">
-                    <label for="price">price</label>
-                    <input type="number" id="price" min="0">
-                    <label for="location">location</label>
-                    <input type="text" id="location">
-                    <label for="rentOrSale">Rent or Sale</label>
-                    <select id="rentOrSale">
-                        <option value="rent">Rent</option>
-                        <option value="sale">Sale</option>
-                    </select>
-                    <label for="type">type</label>
-                    <select id="type">
-                        <option value="">Select Property Type</option>
-                        <option value="house">House</option>
-                        <option value="apartment">Apartment</option>
-                        <option value="villa">Villa</option>
-                        <option value="commercial">Commercial</option>
-                    </select>
-                    <label for="description">description</label>
+        <div class="scroll">
+            <a href="#" class="toTop"><i class="fa-solid fa-arrow-right"></i></a>
+            <div class="list blure">
+                <div class="container">
+                    <h3>list your property</h3>
+                    <form action="newListing">
+                        <label for="title">property titel</label>
+                        <input type="text" id="title">
+                        <label for="price">price</label>
+                        <input type="number" id="price" min="0">
+                        <label for="location">location</label>
+                        <input type="text" id="location">
+                        <label for="rentOrSale">Rent or Sale</label>
+                        <select id="rentOrSale">
+                            <option value="rent">Rent</option>
+                            <option value="sale">Sale</option>
+                        </select>
+                        <label for="type">type</label>
+                        <select id="type">
+                            <option value="">Select Property Type</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="villa">Villa</option>
+                            <option value="commercial">Commercial</option>
+                        </select>
+                        <label for="description">description</label>
 
-                    <textarea name="descripation" id="description"></textarea>
+                        <textarea name="descripation" id="description"></textarea>
 
-                    <input type="file" name="images" id="normalImages" multiple />
-                    <h4>upload images</h4>
-                    <label for="normalImages" class="upload-label">
-                        <!-- Your SVG icon -->
-                        <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"
-                            fill="#fff">
-                            <path
-                                d="M448 80c8.8 0 16 7.2 16 16l0 319.8-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3L48 96c0-8.8 7.2-16 16-16l384 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
-                        </svg>
-                    </label>
-                    <button class="overlay360">360° image</button>
-                    <input type="button" value="submit">
-                </form>
-            </div>
-        </div>
-        <!--  -->
-        <footer class="blure">
-            <div class="container">
-                <div class="logo"><a href="#"><img src="./images/fotter logo.png" alt="logo"></a>
+                        <input type="file" name="images" id="normalImages" multiple />
+                        <h4>upload images</h4>
+                        <label for="normalImages" class="upload-label">
+                            <!-- Your SVG icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"
+                                fill="#fff">
+                                <path
+                                    d="M448 80c8.8 0 16 7.2 16 16l0 319.8-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3L48 96c0-8.8 7.2-16 16-16l384 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+                            </svg>
+                        </label>
+                        <button class="overlay360">360° image</button>
+                        <input type="button" value="submit">
+                    </form>
                 </div>
-                <div class="top">
-                    <div class="contact" id="contact">
-                        <h3>Get in touch</h3>
-                        <ul>
-                            <li><i class="fa-solid fa-location-dot"></i> 123 Street, newYork,Algiza</li>
-                            <li><i class="fa-solid fa-phone"></i> +0123456789</li>
-                            <li><i class="fa-solid fa-envelope"></i> info@makani.com</li>
-                            <li>
-                                <ul>
-                                    <li><i class="fa-brands fa-facebook-f"></i></li>
-                                    <li><i class="fa-brands fa-x-twitter"></i></li>
-                                    <li><i class="fa-brands fa-instagram"></i></li>
-                                    <li><i class="fa-solid fa-drumstick-bite"></i></li>
-                                </ul>
-                            </li>
-                        </ul>
+            </div>
+            <!--  -->
+            <footer class="blure">
+                <div class="container">
+                    <div class="logo"><a href="#"><img src="./images/fotter logo.png" alt="logo"></a>
                     </div>
-                    <div class="links">
-                        <h3>Quick links</h3>
-                        <ul>
-                            <li><a href="about.html">
-                                    <i class="fa-solid fa-angles-right"></i>About</a></li>
-                            <li><a href="contact.html">
-                                    <i class="fa-solid fa-angles-right"></i>Contact</a></li>
-                            <li><a href="findProperty.html">
-                                    <i class="fa-solid fa-angles-right"></i>Properties</a></li>
-                            <li><a href="#">
-                                    <i class="fa-solid fa-angles-right"></i>Terms</a></li>
-                            <li><a href="#">
-                                    <i class="fa-solid fa-angles-right"></i>Polices</a></li>
-                        </ul>
-                    </div>
-                    <div class="gallery">
-                        <h3>Photo Gallery</h3>
-                        <div class="images">
+                    <div class="top">
+                        <div class="contact" id="contact">
+                            <h3>Get in touch</h3>
                             <ul>
-                                <li><img src="./images/property-1.jpg" alt=""></li>
-                                <li><img src="./images/property-2.jpg" alt=""></li>
-                                <li><img src="./images/property-3.jpg" alt=""></li>
-                                <li><img src="./images/property-4.jpg" alt=""></li>
-                                <li><img src="./images/property-5.jpg" alt=""></li>
-                                <li><img src="./images/property-6.jpg" alt=""></li>
+                                <li><i class="fa-solid fa-location-dot"></i> 123 Street, newYork,Algiza</li>
+                                <li><i class="fa-solid fa-phone"></i> +0123456789</li>
+                                <li><i class="fa-solid fa-envelope"></i> info@makani.com</li>
+                                <li>
+                                    <ul>
+                                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                                        <li><i class="fa-brands fa-x-twitter"></i></li>
+                                        <li><i class="fa-brands fa-instagram"></i></li>
+                                        <li><i class="fa-solid fa-drumstick-bite"></i></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
-                        <div class="news">
-                            <div class="text">
-                                <h3>News Letters</h3>
-                                <p>Subscribe to resive the latest listed items</p>
+                        <div class="links">
+                            <h3>Quick links</h3>
+                            <ul>
+                                <li><a href="about.html">
+                                        <i class="fa-solid fa-angles-right"></i>About</a></li>
+                                <li><a href="contact.html">
+                                        <i class="fa-solid fa-angles-right"></i>Contact</a></li>
+                                <li><a href="findProperty.html">
+                                        <i class="fa-solid fa-angles-right"></i>Properties</a></li>
+                                <li><a href="#">
+                                        <i class="fa-solid fa-angles-right"></i>Terms</a></li>
+                                <li><a href="#">
+                                        <i class="fa-solid fa-angles-right"></i>Polices</a></li>
+                            </ul>
+                        </div>
+                        <div class="gallery">
+                            <h3>Photo Gallery</h3>
+                            <div class="images">
+                                <ul>
+                                    <li><img src="./images/property-1.jpg" alt=""></li>
+                                    <li><img src="./images/property-2.jpg" alt=""></li>
+                                    <li><img src="./images/property-3.jpg" alt=""></li>
+                                    <li><img src="./images/property-4.jpg" alt=""></li>
+                                    <li><img src="./images/property-5.jpg" alt=""></li>
+                                    <li><img src="./images/property-6.jpg" alt=""></li>
+                                </ul>
                             </div>
-                            <form action="sub">
-                                <input type="email" placeholder="@makini.com">
-                                <input type="submit" value="Subscribe">
-                            </form>
+                            <div class="news">
+                                <div class="text">
+                                    <h3>News Letters</h3>
+                                    <p>Subscribe to resive the latest listed items</p>
+                                </div>
+                                <form action="sub">
+                                    <input type="email" placeholder="@makini.com">
+                                    <input type="submit" value="Subscribe">
+                                </form>
+                            </div>
                         </div>
                     </div>
+                    <div class="bottom">
+                        <p>© 2025 Makani | all right resrved</p>
+                    </div>
                 </div>
-                <div class="bottom">
-                    <p>© 2025 Makani | all right resrved</p>
-                </div>
-            </div>
-        </footer>
-</div>
+            </footer>
+        </div>
     </div>
     <!--  -->
     <script src="js/addToList.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>
